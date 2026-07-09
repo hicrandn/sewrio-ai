@@ -28,7 +28,12 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-3 lg:items-start">
             <div className="flex items-center gap-1">
               <Image src="/images/logo.png" alt="Sewrio logo" width={28} height={28} className="rounded-full" />
-              <span className="text-lg font-semibold text-white">Sewrio</span>
+              <span
+                className="text-lg font-medium tracking-tight text-white"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Sewrio
+              </span>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-white/40">
               AI-powered digital sewing pattern &amp; fashion platform.

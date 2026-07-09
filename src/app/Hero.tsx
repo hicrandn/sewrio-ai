@@ -14,7 +14,7 @@ export default function Hero() {
 
       <NavBar />
 
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-6 text-center -translate-y-[8%] sm:py-12 sm:-translate-y-[20%]">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-6 text-center -translate-y-[8%] sm:-translate-y-[20%]">
         <h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-8 tracking-tight whitespace-normal sm:whitespace-nowrap"
           style={{ fontFamily: "'Instrument Serif', serif" }}

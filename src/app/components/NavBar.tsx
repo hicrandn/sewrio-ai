@@ -21,7 +21,9 @@ export default function NavBar() {
       <div className="rounded-full px-6 py-3 grid grid-cols-[1fr_auto_1fr] items-center max-w-5xl mx-auto">
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image src="/images/logo.png" alt="Sewrio logo" width={50} height={50} />
-          <span className="text-white font-semibold text-lg">Sewrio</span>
+          <span className="text-white text-xl font-medium tracking-tight whitespace-normal " style={{ fontFamily: "'Instrument Serif', serif" }}>
+            Sewrio
+          </span>
         </Link>
 
         <div className="liquid-glass hidden md:flex items-center gap-8 justify-self-center rounded-full px-8 py-3">

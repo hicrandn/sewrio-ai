@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import NavBar from "../components/NavBar";
 import FAQ from "../components/FAQ";
+import { FAQ_ITEMS } from "../data/faq";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -17,9 +18,26 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
 export default function FAQPage() {
   return (
     <div className="bg-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <NavBar />
       <FAQ />
     </div>

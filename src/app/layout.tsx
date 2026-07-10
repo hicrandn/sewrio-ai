@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import Footer from "./components/Footer";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-QXFDK7DNRY";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +63,27 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  url: "https://sewrio.com",
+  logo: "https://sewrio.com/images/logo.png",
+  description: SITE_DESCRIPTION,
+  sameAs: [
+    "https://www.linkedin.com/company/sewrio/",
+    "https://www.instagram.com/sewriio/",
+    "https://www.tiktok.com/@sewriio",
+  ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  url: "https://sewrio.com",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,6 +95,26 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         {children}
         <Footer />
       </body>

@@ -2,24 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "./Reveal";
 import { StitchDivider } from "./SewingIcons";
-
-const POSTS = [
-  {
-    date: "Jun 2026",
-    title: "Why seam allowance is the hardest thing to automate",
-    excerpt: "The math is easy. Getting a machine to think like a pattern maker is not.",
-  },
-  {
-    date: "May 2026",
-    title: "Grading rules we borrowed from vintage tailoring books",
-    excerpt: "Some of the best sizing logic we use is over eighty years old.",
-  },
-  {
-    date: "Apr 2026",
-    title: "From prompt to production pattern in one afternoon",
-    excerpt: "A behind-the-scenes look at how one designer shipped her first collection.",
-  },
-];
+import { BLOG_POSTS as POSTS } from "../data/blog";
 
 export default function Blog({ variant = "full" }: { variant?: "teaser" | "full" }) {
   const posts = variant === "teaser" ? POSTS.slice(0, 2) : POSTS;
@@ -42,9 +25,9 @@ export default function Blog({ variant = "full" }: { variant?: "teaser" | "full"
 
         <div className={`mt-16 grid gap-6 ${variant === "teaser" ? "md:grid-cols-2" : "md:grid-cols-3"}`}>
           {posts.map((post, i) => (
-            <Reveal key={post.title} delay={i * 120}>
-              <a
-                href="#"
+            <Reveal key={post.slug} delay={i * 120}>
+              <Link
+                href={`/blog/${post.slug}`}
                 className="liquid-glass group flex h-full flex-col rounded-3xl p-8 transition-colors hover:bg-white/5"
               >
                 <span className="text-xs uppercase tracking-wide text-white/40">{post.date}</span>
@@ -54,7 +37,7 @@ export default function Blog({ variant = "full" }: { variant?: "teaser" | "full"
                   Read more
                   <ArrowUpRight size={16} />
                 </span>
-              </a>
+              </Link>
             </Reveal>
           ))}
         </div>

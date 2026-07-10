@@ -1,19 +1,31 @@
-import Link from "next/link";
 import type { Metadata } from "next";
-import NavBar from "./components/NavBar";
+import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Page Not Found",
   description: "The page you're looking for doesn't exist.",
 };
 
-export default function NotFound() {
+export default function GlobalNotFound() {
   return (
-    <div className="bg-black">
-      <div className="relative min-h-screen overflow-hidden bg-black flex flex-col">
-        <NavBar />
-
-        <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-black">
+        <div className="relative flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
             404
           </span>
@@ -34,7 +46,7 @@ export default function NotFound() {
             Back to home
           </Link>
         </div>
-      </div>
-    </div>
+      </body>
+    </html>
   );
 }

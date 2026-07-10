@@ -1,53 +1,62 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { ArrowLeft } from "lucide-react";
-import NavBar from "../../components/NavBar";
-import { StitchDivider } from "../../components/SewingIcons";
-import { BLOG_POSTS } from "../../data/blog";
+import NavBar from "../../../components/NavBar";
+import { StitchDivider } from "../../../components/SewingIcons";
+import { BLOG_SLUGS } from "../../../data/blog";
+import { Link, getPathname } from "@/i18n/navigation";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 };
 
-function getPost(slug: string) {
-  return BLOG_POSTS.find((post) => post.slug === slug);
+type BlogPost = { date: string; title: string; excerpt: string; content: string[] };
+
+function isValidSlug(slug: string): slug is (typeof BLOG_SLUGS)[number] {
+  return (BLOG_SLUGS as readonly string[]).includes(slug);
 }
 
 export function generateStaticParams() {
-  return BLOG_POSTS.map((post) => ({ slug: post.slug }));
+  return BLOG_SLUGS.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPost(slug);
+  const { locale, slug } = await params;
 
-  if (!post) {
+  if (!isValidSlug(slug)) {
     return { title: "Post Not Found" };
   }
+
+  const t = await getTranslations({ locale, namespace: "BlogPosts" });
+  const post = t.raw(slug) as BlogPost;
+  const url = getPathname({ href: `/blog/${slug}`, locale });
 
   return {
     title: post.title,
     description: post.excerpt,
     alternates: {
-      canonical: `/blog/${post.slug}`,
+      canonical: url,
     },
     openGraph: {
       type: "article",
       title: post.title,
       description: post.excerpt,
-      url: `/blog/${post.slug}`,
+      url,
     },
   };
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = await params;
-  const post = getPost(slug);
+  const { locale, slug } = await params;
 
-  if (!post) {
+  if (!isValidSlug(slug)) {
     notFound();
   }
+
+  const t = await getTranslations({ locale, namespace: "BlogPosts" });
+  const tSection = await getTranslations({ locale, namespace: "BlogSection" });
+  const post = t.raw(slug) as BlogPost;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -67,7 +76,7 @@ export default async function BlogPostPage({ params }: Props) {
         url: "https://sewrio.com/images/logo.png",
       },
     },
-    mainEntityOfPage: `https://sewrio.com/blog/${post.slug}`,
+    mainEntityOfPage: `https://sewrio.com/blog/${slug}`,
   };
 
   return (
@@ -85,7 +94,7 @@ export default async function BlogPostPage({ params }: Props) {
             className="inline-flex items-center gap-1 text-sm font-medium text-white/60 transition-colors hover:text-white"
           >
             <ArrowLeft size={16} />
-            All posts
+            {tSection("allPosts")}
           </Link>
 
           <span className="mt-8 block text-xs uppercase tracking-wide text-white/40">

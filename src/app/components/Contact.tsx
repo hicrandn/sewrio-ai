@@ -1,8 +1,9 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import Reveal from "./Reveal";
 import ContactForm from "./ContactForm";
 import { StitchDivider } from "./SewingIcons";
 import { AvatarCircles } from "@/components/ui/avatar-circles";
+import { Link } from "@/i18n/navigation";
 
 const CONTACT_AVATARS = [
   {
@@ -31,27 +32,31 @@ const CONTACT_AVATARS = [
   },
 ];
 
-export default function Contact({ variant = "teaser" }: { variant?: "teaser" | "full" }) {
+export default async function Contact({ variant = "teaser" }: { variant?: "teaser" | "full" }) {
+  const t = await getTranslations("ContactSection");
+
   return (
     <section id="contact" className="relative bg-black px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
           <>
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">Contact</span>
+            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
+              {t("eyebrow")}
+            </span>
             <h2
               className="mt-4 text-4xl md:text-5xl text-white tracking-tight"
               style={{ fontFamily: "'Instrument Serif', serif" }}
             >
-              Let&apos;s make something.
+              {t("heading")}
             </h2>
             <StitchDivider className="mx-auto mt-8 h-3 w-40 text-white/20" />
             <p className="mx-auto mt-8 max-w-md text-sm leading-relaxed text-white/60">
-              Questions, partnership ideas or just curious how it works — we read every message.
+              {t("description")}
             </p>
 
             <div className="mt-8 flex flex-col items-center gap-3">
               <AvatarCircles numPeople={99} avatarUrls={CONTACT_AVATARS} />
-              <p className="text-xs text-white/40">Designers and pattern makers already on the waitlist</p>
+              <p className="text-xs text-white/40">{t("waitlist")}</p>
             </div>
 
             {variant === "teaser" && (
@@ -59,7 +64,7 @@ export default function Contact({ variant = "teaser" }: { variant?: "teaser" | "
                 href="/contact"
                 className="liquid-glass mt-8 inline-block rounded-full px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5"
               >
-                Get in touch
+                {t("getInTouch")}
               </Link>
             )}
           </>

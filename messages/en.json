@@ -1,0 +1,215 @@
+{
+  "WhatWeDoPage": {
+    "title": "What We Do",
+    "description": "From sketch to pattern, instantly. See how Sewrio's AI turns your designs into precise, production-ready sewing patterns.",
+    "eyebrow": "What we are doing?",
+    "heading": "From sketch to <em>pattern</em>, instantly."
+  },
+  "WhatWeDoSteps": {
+    "steps": [
+      {
+        "eyebrow": "Step 1",
+        "title": "Upload your photo",
+        "description": "Upload a photo of the garment you want to recreate. Sewrio examines the image and turns it into a structured pattern draft within minutes.",
+        "alt": "Uploading a photo of a garment design"
+      },
+      {
+        "eyebrow": "Step 2",
+        "title": "See it before you cut",
+        "description": "Review your pattern on screen before you cut. Seam allowance, straight grain and measurements are all in place — edit them if you need to.",
+        "alt": "Digital pattern and fabric simulation"
+      },
+      {
+        "eyebrow": "Step 3",
+        "title": "Export production files",
+        "description": "Download your finished pattern in the formats used in production and go straight to sewing.",
+        "alt": "Exporting a production-ready pattern file"
+      }
+    ]
+  },
+  "WhyUsSection": {
+    "eyebrow": "Why us?",
+    "heading": "Built by people who <em>sew</em>.",
+    "intro": "Sewrio works differently: it starts from a photo you already have and turns it into a sewing pattern you can work with. Instead of looking at a garment and sketching out what its pattern might look like, you hand over the photo and get the pattern ready-made.",
+    "differenceLabel": "In short, here's the difference:",
+    "points": [
+      "Produces a sewing pattern directly from a photo.",
+      "Delivers results in seconds, removing days of manual drafting.",
+      "No training required — unlike CAD software that takes weeks to learn.",
+      "Gives you an editable pattern, not a static image.",
+      "Preserves technical details like seam allowance and straight grain.",
+      "Exports to the formats used in production."
+    ],
+    "closing": "CAD software is powerful once you're drawing — Sewrio shortens the path to get there, turning the idea in your photo into a usable pattern quickly, with no learning curve.",
+    "learnMore": "Learn more"
+  },
+  "FAQSection": {
+    "eyebrow": "FAQ",
+    "heading": "Questions, <em>answered</em>.",
+    "seeAll": "See all FAQs"
+  },
+  "FAQItems": {
+    "items": [
+      {
+        "q": "What can I do with the demo?",
+        "a": "Experience SEWRIO's workflow by uploading a garment photo and generating a basic digital sewing pattern. The demo is designed to showcase the platform and includes daily upload limits and simplified pattern generation."
+      },
+      {
+        "q": "What kind of clothing photos work best?",
+        "a": "For the best results, upload a flat-lay image with a clean background, the entire garment visible, and minimal folds or wrinkles. Simple garments such as t-shirts, dresses, skirts, and shirts currently produce the most accurate patterns."
+      },
+      {
+        "q": "What file formats does SEWRIO export?",
+        "a": "Generated patterns can be exported as PDF and PNG files, making them easy to print, review, or use during the pattern-making process. Additional professional export formats such as DXF and SVG will be available in future releases."
+      },
+      {
+        "q": "Do I need to install anything?",
+        "a": "No. SEWRIO runs entirely in your browser. There's nothing to download or install—simply upload your garment image and start generating patterns."
+      },
+      {
+        "q": "Do I need to sign up?",
+        "a": "Yes. A valid email address is required to access the demo. No credit card is needed, and you'll receive updates as new features and the full platform become available."
+      },
+      {
+        "q": "Does my pattern come in my size?",
+        "a": "The current demo generates a standard-size pattern for demonstration purposes. Custom body measurements, made-to-measure pattern generation, and automatic grading will be available in the full version."
+      },
+      {
+        "q": "Is my design data private?",
+        "a": "Yes. Your uploaded images and generated patterns remain private. We do not use your files to train AI models without your explicit permission."
+      },
+      {
+        "q": "Can I edit the generated pattern?",
+        "a": "The demo provides a preview of the generated pattern. Full editing tools, measurement adjustments, and advanced customization will be included in the complete platform."
+      },
+      {
+        "q": "Which garments are currently supported?",
+        "a": "The demo performs best with simple garment types such as dresses, skirts, shirts, and t-shirts. Support for jackets, trousers, hoodies, and more complex garment constructions is continuously being expanded."
+      },
+      {
+        "q": "How accurate are the generated patterns?",
+        "a": "The demo is intended to demonstrate SEWRIO's AI workflow rather than replace professional pattern development. Pattern quality will continue to improve as the platform evolves and additional AI models are introduced."
+      }
+    ]
+  },
+  "Hero": {
+    "title": "Your vision. Perfectly cut.",
+    "tagline": "AI-powered digital sewing pattern & fashion platform",
+    "cta": "Get Early Access"
+  },
+  "NavBar": {
+    "whatWeDo": "What we are doing?",
+    "whyUs": "Why us?",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Footer": {
+    "tagline": "AI-powered digital sewing pattern & fashion platform.",
+    "copyright": "© 2025 Sewrio. All rights reserved.",
+    "madeFor": "Made for makers."
+  },
+  "WhatWeDoTeaser": {
+    "features": [
+      {
+        "title": "AI Pattern Generation",
+        "description": "Describe your design in plain words and get a production-ready sewing pattern in minutes."
+      },
+      {
+        "title": "Smart Grading",
+        "description": "Scale every pattern across sizes automatically, with precision fit built into each curve."
+      },
+      {
+        "title": "Digital Fabric Simulation",
+        "description": "Preview drape, fit and movement on your fabric of choice before you cut a single piece."
+      }
+    ]
+  },
+  "BlogSection": {
+    "eyebrow": "Blog",
+    "heading": "Notes from the <em>studio</em>.",
+    "readMore": "Read more",
+    "viewAll": "View all posts",
+    "allPosts": "All posts"
+  },
+  "BlogPageMeta": {
+    "title": "Blog",
+    "description": "Notes from the Sewrio studio — behind-the-scenes stories on AI-powered pattern making, sewing, and fashion technology."
+  },
+  "BlogPosts": {
+    "seam-allowance-hardest-thing-to-automate": {
+      "date": "Jun 2026",
+      "title": "Why seam allowance is the hardest thing to automate",
+      "excerpt": "The math is easy. Getting a machine to think like a pattern maker is not.",
+      "content": [
+        "Seam allowance looks like a solved problem from the outside — add a fixed offset around every pattern piece and you're done. In practice, the right allowance depends on the fabric, the seam type, the machine that will sew it, and the finishing method, and it changes piece by piece across a single garment.",
+        "A curved princess seam on a woven bodice wants a narrower allowance than a straight side seam on heavy denim. A serged knit hem behaves nothing like a bound edge. None of that is written down anywhere a model can simply read it — it lives in the judgment of people who have cut thousands of garments.",
+        "Getting this right meant training Sewrio on real pattern sets annotated by working pattern makers, not just geometry rules. The result is an engine that treats seam allowance as a design decision tied to fabric and construction, not a constant."
+      ]
+    },
+    "grading-rules-from-vintage-tailoring-books": {
+      "date": "May 2026",
+      "title": "Grading rules we borrowed from vintage tailoring books",
+      "excerpt": "Some of the best sizing logic we use is over eighty years old.",
+      "content": [
+        "Modern grading software tends to treat sizing as pure interpolation — scale every point on the pattern by the same ratio and call it a size range. Tailors from the mid-20th century knew better: some measurements grow faster than others as a body scales, and grading in a straight line produces garments that fit worse the further you get from the sample size.",
+        "We went back to tailoring references from the 1930s–1950s to study how experienced pattern graders distributed ease non-uniformly across a size range — more growth through the bust and hip, less through the neckline and wrist.",
+        "Those rules, translated into Sewrio's grading engine, are why patterns generated at the edges of a size range still fit the way the sample size does, instead of just looking like a scaled photocopy of it."
+      ]
+    },
+    "from-prompt-to-production-pattern-in-one-afternoon": {
+      "date": "Apr 2026",
+      "title": "From prompt to production pattern in one afternoon",
+      "excerpt": "A behind-the-scenes look at how one designer shipped her first collection.",
+      "content": [
+        "An independent designer came to us with sketches for a six-piece capsule collection and a production deadline three weeks out. Normally, turning sketches into graded, cutter-ready patterns for a full size range takes a pattern maker days per style.",
+        "Working directly in Sewrio, she described each silhouette in plain language, adjusted fit and ease interactively, and exported production-ready DXF files the same afternoon — with every piece graded across her full size range and seam allowances set per fabric.",
+        "The collection shipped on time. What used to be the bottleneck between a sketch and a cutting table became the fastest part of her process."
+      ]
+    }
+  },
+  "ContactSection": {
+    "eyebrow": "Contact",
+    "heading": "Let's make something.",
+    "description": "Questions, partnership ideas or just curious how it works — we read every message.",
+    "waitlist": "Designers and pattern makers already on the waitlist",
+    "getInTouch": "Get in touch"
+  },
+  "ContactPageMeta": {
+    "title": "Contact",
+    "description": "Get in touch with the Sewrio team — questions, partnership ideas, or feedback. We read every message."
+  },
+  "ContactForm": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@studio.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "What's this about?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us a bit more...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "successTitle": "Message sent.",
+    "successBody": "Thanks for reaching out — we read every message and will get back to you soon."
+  },
+  "ContactActions": {
+    "errorRequired": "Please fill in your name, email, and message.",
+    "errorInvalidEmail": "Please enter a valid email address.",
+    "errorGeneric": "Something went wrong sending your message. Please try again."
+  },
+  "WhyUsPageMeta": {
+    "title": "Why Sewrio",
+    "description": "Built by people who sew. Discover why designers and makers choose Sewrio for fast, accurate, AI-powered pattern making."
+  },
+  "NotFound": {
+    "metaTitle": "Page Not Found",
+    "metaDescription": "The page you're looking for doesn't exist.",
+    "eyebrow": "404",
+    "heading": "Lost the <em>pattern</em>.",
+    "body": "We couldn't find the page you were looking for. It may have been moved or no longer exists.",
+    "backHome": "Back to home"
+  }
+}

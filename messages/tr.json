@@ -1,0 +1,215 @@
+{
+  "WhatWeDoPage": {
+    "title": "Ne Yapıyoruz",
+    "description": "Sewrio'nun yapay zekası tasarımlarını nasıl hassas, üretime hazır dikiş kalıplarına dönüştürüyor, gör.",
+    "eyebrow": "Ne yapıyoruz?",
+    "heading": "Taslaktan <em>kalıba</em>, anında."
+  },
+  "WhatWeDoSteps": {
+    "steps": [
+      {
+        "eyebrow": "Adım 1",
+        "title": "Fotoğrafını yükle",
+        "description": "Çıkarmak istediğin kıyafetin fotoğrafını yükle. Sewrio görseli inceler ve dakikalar içinde yapılandırılmış bir kalıp taslağına dönüştürür.",
+        "alt": "Bir kıyafet tasarımının fotoğrafını yükleme"
+      },
+      {
+        "eyebrow": "Adım 2",
+        "title": "Kesmeden önce gör",
+        "description": "Kalıbını kesime geçmeden önce ekranda incele. Dikiş payı, düz iplik yönü ve ölçüler yerli yerinde; gerekirse üzerinde düzenle.",
+        "alt": "Dijital kalıp ve kumaş simülasyonu"
+      },
+      {
+        "eyebrow": "Adım 3",
+        "title": "Üretim dosyalarını dışa aktar",
+        "description": "Hazır kalıbını üretimde kullanılan formatlarda indir ve doğrudan dikim aşamasına geç.",
+        "alt": "Üretime hazır kalıp dosyasını dışa aktarma"
+      }
+    ]
+  },
+  "WhyUsSection": {
+    "eyebrow": "Neden biz?",
+    "heading": "<em>Dikiş diken</em> insanlar tarafından kuruldu.",
+    "intro": "Sewrio farklı çalışır: elinizdeki bir fotoğraftan yola çıkar ve size üzerinde çalışabileceğiniz bir dikiş kalıbı çıkarır. Kıyafeti görüp \"bunun kalıbı nasıl olur\" diye baştan çizmek yerine, fotoğrafı verir, kalıbı hazır alırsınız.",
+    "differenceLabel": "Kısaca farkı şu:",
+    "points": [
+      "Fotoğraftan doğrudan dikiş kalıbı üretir.",
+      "Saniyeler içinde sonuç verir; günler süren çizim aşamasını ortadan kaldırır.",
+      "Kullanmak için eğitim gerektirmez; CAD yazılımları gibi haftalarca öğrenmenize gerek yok.",
+      "Statik bir görsel değil, düzenlenebilir bir kalıp verir.",
+      "Dikiş payı ve düz iplik yönü gibi teknik detayları koruyarak çalışır.",
+      "Üretimde kullanılan formatlara aktarım yapar."
+    ],
+    "closing": "CAD programları çizim aşamasında güçlüdür; Sewrio ise o çizime giden yolu kısaltır. Fotoğraftaki fikri hızla, öğrenme derdi olmadan kullanılabilir bir kalıba çevirir.",
+    "learnMore": "Daha fazla bilgi"
+  },
+  "FAQSection": {
+    "eyebrow": "SSS",
+    "heading": "Sorular, <em>yanıtlandı</em>.",
+    "seeAll": "Tüm SSS'leri gör"
+  },
+  "FAQItems": {
+    "items": [
+      {
+        "q": "Demoyla neler yapabilirim?",
+        "a": "Bir kıyafet fotoğrafı yükleyip temel bir dijital dikiş kalıbı oluşturarak SEWRIO'nun çalışma şeklini deneyimleyebilirsin. Demo, platformu tanıtmak için tasarlandı; günlük yükleme limitleri ve sadeleştirilmiş kalıp üretimi içerir."
+      },
+      {
+        "q": "Hangi tür kıyafet fotoğrafları en iyi sonucu verir?",
+        "a": "En iyi sonuç için, temiz bir arka plana sahip, kıyafetin tamamının göründüğü, kırışıklığı ve katı az olan düz (flat-lay) bir fotoğraf yükle. Tişört, elbise, etek ve gömlek gibi basit kıyafetler şu an en doğru kalıpları veriyor."
+      },
+      {
+        "q": "SEWRIO hangi dosya formatlarında dışa aktarım yapıyor?",
+        "a": "Oluşturulan kalıplar PDF ve PNG olarak dışa aktarılabilir; bu da yazdırma, inceleme veya kalıp hazırlama sürecinde kullanmayı kolaylaştırır. DXF ve SVG gibi ek profesyonel dışa aktarım formatları gelecek sürümlerde eklenecek."
+      },
+      {
+        "q": "Bir şey yüklemem gerekiyor mu?",
+        "a": "Hayır. SEWRIO tamamen tarayıcında çalışır. İndirilecek ya da kurulacak hiçbir şey yok — sadece kıyafet görselini yükle ve kalıp oluşturmaya başla."
+      },
+      {
+        "q": "Kayıt olmam gerekiyor mu?",
+        "a": "Evet. Demoya erişmek için geçerli bir e-posta adresi gerekiyor. Kredi kartı gerekmez; yeni özellikler ve tam platform kullanıma sunuldukça güncellemeler alırsın."
+      },
+      {
+        "q": "Kalıbım kendi bedenime mi geliyor?",
+        "a": "Mevcut demo, tanıtım amaçlı standart bedende bir kalıp oluşturuyor. Özel vücut ölçüleri, kişiye özel (made-to-measure) kalıp üretimi ve otomatik gradeleme tam sürümde sunulacak."
+      },
+      {
+        "q": "Tasarım verilerim gizli mi?",
+        "a": "Evet. Yüklediğin görseller ve oluşturulan kalıplar gizli kalır. Açık iznin olmadan dosyalarını yapay zeka modellerini eğitmek için kullanmıyoruz."
+      },
+      {
+        "q": "Oluşturulan kalıbı düzenleyebilir miyim?",
+        "a": "Demo, oluşturulan kalıbın bir önizlemesini sunar. Tam düzenleme araçları, ölçü ayarlamaları ve gelişmiş özelleştirme tam platformda yer alacak."
+      },
+      {
+        "q": "Şu anda hangi kıyafetler destekleniyor?",
+        "a": "Demo; elbise, etek, gömlek ve tişört gibi basit kıyafet türlerinde en iyi sonucu veriyor. Ceket, pantolon, hoodie ve daha karmaşık kıyafet yapıları için destek sürekli genişletiliyor."
+      },
+      {
+        "q": "Oluşturulan kalıplar ne kadar doğru?",
+        "a": "Demo, profesyonel kalıp geliştirmenin yerini almaktan çok SEWRIO'nun yapay zeka iş akışını göstermek için tasarlandı. Platform geliştikçe ve yeni yapay zeka modelleri eklendikçe kalıp kalitesi gelişmeye devam edecek."
+      }
+    ]
+  },
+  "Hero": {
+    "title": "Vizyonun. Kusursuz kesim.",
+    "tagline": "Yapay zeka destekli dijital dikiş kalıbı ve moda platformu",
+    "cta": "Erken Erişim Al"
+  },
+  "NavBar": {
+    "whatWeDo": "Ne yapıyoruz?",
+    "whyUs": "Neden biz?",
+    "blog": "Blog",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
+  },
+  "Footer": {
+    "tagline": "Yapay zeka destekli dijital dikiş kalıbı ve moda platformu.",
+    "copyright": "© 2025 Sewrio. Tüm hakları saklıdır.",
+    "madeFor": "Üretenler için yapıldı."
+  },
+  "WhatWeDoTeaser": {
+    "features": [
+      {
+        "title": "Yapay Zeka ile Kalıp Üretimi",
+        "description": "Tasarımını sade bir dille anlat, dakikalar içinde üretime hazır bir dikiş kalıbı al."
+      },
+      {
+        "title": "Akıllı Gradeleme",
+        "description": "Her kalıbı bedenler arasında otomatik olarak ölçeklendir; her eğride hassas bir uyum sağlanır."
+      },
+      {
+        "title": "Dijital Kumaş Simülasyonu",
+        "description": "Tek bir parça bile kesmeden önce, seçtiğin kumaşta dökümü, uyumu ve hareketi önizle."
+      }
+    ]
+  },
+  "BlogSection": {
+    "eyebrow": "Blog",
+    "heading": "Stüdyodan <em>notlar</em>.",
+    "readMore": "Devamını oku",
+    "viewAll": "Tüm yazıları gör",
+    "allPosts": "Tüm yazılar"
+  },
+  "BlogPageMeta": {
+    "title": "Blog",
+    "description": "Sewrio stüdyosundan notlar — yapay zeka destekli kalıp üretimi, dikiş ve moda teknolojisi üzerine perde arkası hikayeler."
+  },
+  "BlogPosts": {
+    "seam-allowance-hardest-thing-to-automate": {
+      "date": "Haz 2026",
+      "title": "Dikiş payı neden otomatikleştirmesi en zor şey",
+      "excerpt": "Matematiği kolay. Bir makineyi bir kalıpçı gibi düşündürmek değil.",
+      "content": [
+        "Dikiş payı dışarıdan bakınca çözülmüş bir problem gibi görünür — her kalıp parçasının etrafına sabit bir pay ekle, işin biter. Pratikte doğru pay; kumaşa, dikiş tipine, o dikişi yapacak makineye ve bitirme yöntemine göre değişir, hatta tek bir kıyafet üzerinde parçadan parçaya farklılaşır.",
+        "Dokuma bir korsajdaki kavisli prenses dikişi, kalın kot üzerindeki düz bir yan dikişten daha dar bir pay ister. Overlok yapılmış bir triko eteği, bantlanmış bir kenar gibi davranmaz. Bunların hiçbiri bir modelin doğrudan okuyabileceği bir yerde yazılı değildir — binlerce kıyafet kesmiş insanların muhakemesinde yaşar.",
+        "Bunu doğru yapmak, Sewrio'yu sadece geometri kurallarıyla değil, çalışan kalıpçılar tarafından açıklamalı gerçek kalıp setleriyle eğitmek anlamına geldi. Sonuç, dikiş payını sabit bir değer değil, kumaşa ve konstrüksiyona bağlı bir tasarım kararı olarak ele alan bir motor."
+      ]
+    },
+    "grading-rules-from-vintage-tailoring-books": {
+      "date": "May 2026",
+      "title": "Eski terzilik kitaplarından ödünç aldığımız gradeleme kuralları",
+      "excerpt": "Kullandığımız en iyi beden mantığının bir kısmı seksen yıldan eski.",
+      "content": [
+        "Modern gradeleme yazılımları bedenlendirmeyi genelde saf bir enterpolasyon olarak ele alır — kalıptaki her noktayı aynı oranla ölçekle ve buna beden aralığı de. 20. yüzyıl ortasının terzileri daha iyisini biliyordu: beden büyüdükçe bazı ölçüler diğerlerinden daha hızlı büyür, ve düz bir çizgide gradeleme, numune bedenden uzaklaştıkça daha kötü oturan kıyafetler üretir.",
+        "1930'lar-1950'ler arasındaki terzilik kaynaklarına dönüp, deneyimli kalıp gradecilerinin payı bir beden aralığında nasıl eşit olmayan şekilde dağıttığını inceledik — göğüs ve kalçada daha fazla büyüme, yaka ve bilekte daha az.",
+        "Bu kurallar, Sewrio'nun gradeleme motoruna aktarıldığında, bir beden aralığının uçlarında üretilen kalıpların neden hâlâ numune beden gibi oturduğunu, sadece onun ölçeklenmiş bir fotokopisi gibi görünmediğini açıklıyor."
+      ]
+    },
+    "from-prompt-to-production-pattern-in-one-afternoon": {
+      "date": "Nis 2026",
+      "title": "Bir öğleden sonrada komuttan üretim kalıbına",
+      "excerpt": "Bir tasarımcının ilk koleksiyonunu nasıl çıkardığına perde arkasından bir bakış.",
+      "content": [
+        "Bağımsız bir tasarımcı, altı parçalık bir kapsül koleksiyon için taslaklarla ve üç hafta sonrasına ayarlı bir üretim teslim tarihiyle bize geldi. Normalde taslakları tam bir beden aralığı için gradelenmiş, kesime hazır kalıplara dönüştürmek, bir kalıpçının stil başına günler harcamasını gerektirir.",
+        "Doğrudan Sewrio içinde çalışarak, her silueti sade bir dille tarif etti, uyumu ve payı interaktif olarak ayarladı ve aynı öğleden sonra üretime hazır DXF dosyalarını dışa aktardı — her parça tam beden aralığında gradelenmiş ve dikiş payları kumaşa göre ayarlanmış olarak.",
+        "Koleksiyon zamanında sevk edildi. Bir zamanlar taslak ile kesim masası arasındaki darboğaz olan şey, sürecinin en hızlı kısmı haline geldi."
+      ]
+    }
+  },
+  "ContactSection": {
+    "eyebrow": "İletişim",
+    "heading": "Birlikte bir şeyler yapalım.",
+    "description": "Sorular, iş birliği fikirleri ya da nasıl çalıştığını merak ediyorsan — her mesajı okuyoruz.",
+    "waitlist": "Tasarımcılar ve kalıpçılar zaten bekleme listesinde",
+    "getInTouch": "Bize ulaşın"
+  },
+  "ContactPageMeta": {
+    "title": "İletişim",
+    "description": "Sewrio ekibiyle iletişime geç — sorular, iş birliği fikirleri veya geri bildirim. Her mesajı okuyoruz."
+  },
+  "ContactForm": {
+    "nameLabel": "İsim",
+    "namePlaceholder": "Adınız",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "sen@stüdyo.com",
+    "subjectLabel": "Konu",
+    "subjectPlaceholder": "Bu ne hakkında?",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Biraz daha anlat...",
+    "send": "Mesaj gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Mesaj gönderildi.",
+    "successBody": "Ulaştığın için teşekkürler — her mesajı okuyoruz ve yakında sana geri döneceğiz."
+  },
+  "ContactActions": {
+    "errorRequired": "Lütfen isim, e-posta ve mesaj alanlarını doldur.",
+    "errorInvalidEmail": "Lütfen geçerli bir e-posta adresi gir.",
+    "errorGeneric": "Mesajın gönderilirken bir şeyler ters gitti. Lütfen tekrar dene."
+  },
+  "WhyUsPageMeta": {
+    "title": "Neden Sewrio",
+    "description": "Dikiş dikenler tarafından kuruldu. Tasarımcıların ve üreticilerin hızlı, doğru, yapay zeka destekli kalıp üretimi için neden Sewrio'yu seçtiğini keşfet."
+  },
+  "NotFound": {
+    "metaTitle": "Sayfa Bulunamadı",
+    "metaDescription": "Aradığın sayfa mevcut değil.",
+    "eyebrow": "404",
+    "heading": "Kalıbı <em>kaybettik</em>.",
+    "body": "Aradığın sayfayı bulamadık. Taşınmış ya da artık mevcut olmayabilir.",
+    "backHome": "Ana sayfaya dön"
+  }
+}

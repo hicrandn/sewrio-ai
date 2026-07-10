@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { getTranslations } from "next-intl/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,6 +16,8 @@ export async function sendContactMessage(
   _prevState: ContactFormState,
   formData: FormData,
 ): Promise<ContactFormState> {
+  const t = await getTranslations("ContactActions");
+
   const name = formData.get("name")?.toString().trim() ?? "";
   const email = formData.get("email")?.toString().trim() ?? "";
   const subject = formData.get("subject")?.toString().trim() ?? "";
@@ -23,12 +26,12 @@ export async function sendContactMessage(
   if (!name || !email || !message) {
     return {
       status: "error",
-      message: "Please fill in your name, email, and message.",
+      message: t("errorRequired"),
     };
   }
 
   if (!EMAIL_PATTERN.test(email)) {
-    return { status: "error", message: "Please enter a valid email address." };
+    return { status: "error", message: t("errorInvalidEmail") };
   }
 
   try {
@@ -44,14 +47,14 @@ export async function sendContactMessage(
       console.error("Resend failed to send contact email", error);
       return {
         status: "error",
-        message: "Something went wrong sending your message. Please try again.",
+        message: t("errorGeneric"),
       };
     }
   } catch (error) {
     console.error("Failed to send contact email", error);
     return {
       status: "error",
-      message: "Something went wrong sending your message. Please try again.",
+      message: t("errorGeneric"),
     };
   }
 

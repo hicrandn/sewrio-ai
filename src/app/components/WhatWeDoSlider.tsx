@@ -2,38 +2,22 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const STEPS = [
-  {
-    image: "/images/one.jpg",
-    alt: "Describing a garment design",
-    eyebrow: "Step 1",
-    title: "Describe your vision",
-    description:
-      "Type out a garment in plain words — silhouette, fabric, fit — and Sewrio's model turns it into a structured pattern draft in minutes.",
-  },
-  {
-    image: "/images/5.jpg",
-    alt: "Digital pattern and fabric simulation",
-    eyebrow: "Step 2",
-    title: "See it before you cut",
-    description:
-      "Every pattern is graded across sizes and simulated on your chosen fabric, so drape and fit are validated long before scissors touch cloth.",
-  },
-  {
-    image: "/images/8.jpg",
-    alt: "Exporting a production-ready pattern file",
-    eyebrow: "Step 3",
-    title: "Export production files",
-    description:
-      "Send the finished pattern straight to PDF, DXF or your cutting machine — no manual redrawing or format wrangling required.",
-  },
+type Step = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  alt: string;
+};
 
-];
+const IMAGES = ["/images/one.jpg", "/images/5.jpg", "/images/8.jpg"];
 
 const AUTOPLAY_MS = 5000;
 
 export default function WhatWeDoSlider() {
+  const t = useTranslations("WhatWeDoSteps");
+  const STEPS = t.raw("steps") as Step[];
   const [active, setActive] = useState(0);
   const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
@@ -42,7 +26,7 @@ export default function WhatWeDoSlider() {
       setActive((current) => (current + 1) % STEPS.length);
     }, AUTOPLAY_MS);
     return () => clearInterval(id);
-  }, []);
+  }, [STEPS.length]);
 
   useEffect(() => {
     itemRefs.current[active]?.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -54,8 +38,8 @@ export default function WhatWeDoSlider() {
         <div className="liquid-glass relative aspect-3/2 overflow-hidden rounded-3xl">
           {STEPS.map((step, i) => (
             <Image
-              key={step.image}
-              src={step.image}
+              key={IMAGES[i]}
+              src={IMAGES[i]}
               alt={step.alt}
               fill
               className={`object-cover transition-opacity duration-700 ease-out ${

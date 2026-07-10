@@ -1,23 +1,35 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "./Reveal";
 import { StitchDivider } from "./SewingIcons";
-import { BLOG_POSTS as POSTS } from "../data/blog";
+import { BLOG_SLUGS } from "../data/blog";
+import { Link } from "@/i18n/navigation";
 
-export default function Blog({ variant = "full" }: { variant?: "teaser" | "full" }) {
-  const posts = variant === "teaser" ? POSTS.slice(0, 2) : POSTS;
+type BlogPostMeta = { date: string; title: string; excerpt: string };
+
+export default async function Blog({ variant = "full" }: { variant?: "teaser" | "full" }) {
+  const t = await getTranslations("BlogSection");
+  const tPosts = await getTranslations("BlogPosts");
+
+  const allPosts = BLOG_SLUGS.map((slug) => ({
+    slug,
+    ...(tPosts.raw(slug) as BlogPostMeta),
+  }));
+  const posts = variant === "teaser" ? allPosts.slice(0, 2) : allPosts;
 
   return (
     <section id="blog" className="relative bg-black px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="text-center">
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">Blog</span>
+            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
+              {t("eyebrow")}
+            </span>
             <h2
               className="mt-4 text-4xl md:text-5xl text-white tracking-tight"
               style={{ fontFamily: "'Instrument Serif', serif" }}
             >
-              Notes from the <em className="italic">studio</em>.
+              {t.rich("heading", { em: (chunks) => <em className="italic">{chunks}</em> })}
             </h2>
             <StitchDivider className="mx-auto mt-8 h-3 w-40 text-white/20" />
           </div>
@@ -34,7 +46,7 @@ export default function Blog({ variant = "full" }: { variant?: "teaser" | "full"
                 <h3 className="mt-4 text-lg font-semibold text-white">{post.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-white/60">{post.excerpt}</p>
                 <span className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-white/80 group-hover:text-white">
-                  Read more
+                  {t("readMore")}
                   <ArrowUpRight size={16} />
                 </span>
               </Link>
@@ -48,7 +60,7 @@ export default function Blog({ variant = "full" }: { variant?: "teaser" | "full"
               href="/blog"
               className="liquid-glass inline-block rounded-full px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5"
             >
-              View all posts
+              {t("viewAll")}
             </Link>
           </div>
         )}

@@ -1,10 +1,13 @@
-import FadeLoopVideo from "./components/FadeLoopVideo";
-import NavBar from "./components/NavBar";
+import { getTranslations } from "next-intl/server";
+import FadeLoopVideo from "../components/FadeLoopVideo";
+import NavBar from "../components/NavBar";
 
 const VIDEO_SRC =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_115001_bcdaa3b4-03de-47e7-ad63-ae3e392c32d4.mp4";
 
-export default function Hero() {
+export default async function Hero() {
+  const t = await getTranslations("Hero");
+
   return (
     <div className="min-h-screen bg-black overflow-hidden relative flex flex-col">
       <FadeLoopVideo
@@ -19,12 +22,12 @@ export default function Hero() {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-8 tracking-tight whitespace-normal sm:whitespace-nowrap"
           style={{ fontFamily: "'Instrument Serif', serif" }}
         >
-        Your vision. Perfectly cut.
+        {t("title")}
         </h1>
 
         <div className="max-w-xl w-full space-y-4">
           <p className="text-white text-sm leading-relaxed px-4">
-          AI-powered digital sewing pattern & fashion platform
+          {t("tagline")}
           </p>
 
           <a
@@ -33,7 +36,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="liquid-glass inline-block rounded-full px-8 py-3 text-white text-sm font-medium hover:bg-white/5 transition-colors"
           >
-            Get Early Access
+            {t("cta")}
           </a>
         </div>
       </div>

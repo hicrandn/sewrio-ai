@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { useTranslations } from "next-intl";
 import { sendContactMessage, type ContactFormState } from "../contact/actions";
 
 const inputClasses =
@@ -9,15 +10,14 @@ const inputClasses =
 const initialState: ContactFormState = { status: "idle" };
 
 export default function ContactForm() {
+  const t = useTranslations("ContactForm");
   const [state, formAction, pending] = useActionState(sendContactMessage, initialState);
 
   if (state.status === "success") {
     return (
       <div className="liquid-glass rounded-3xl p-10 text-center">
-        <h3 className="text-lg font-semibold text-white">Message sent.</h3>
-        <p className="mt-3 text-sm leading-relaxed text-white/60">
-          Thanks for reaching out — we read every message and will get back to you soon.
-        </p>
+        <h3 className="text-lg font-semibold text-white">{t("successTitle")}</h3>
+        <p className="mt-3 text-sm leading-relaxed text-white/60">{t("successBody")}</p>
       </div>
     );
   }
@@ -32,35 +32,55 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-2 block text-xs font-medium uppercase tracking-wide text-white/40">
-            Name
+            {t("nameLabel")}
           </label>
-          <input id="name" name="name" type="text" required placeholder="Your name" className={inputClasses} />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder={t("namePlaceholder")}
+            className={inputClasses}
+          />
         </div>
         <div>
           <label htmlFor="email" className="mb-2 block text-xs font-medium uppercase tracking-wide text-white/40">
-            Email
+            {t("emailLabel")}
           </label>
-          <input id="email" name="email" type="email" required placeholder="you@studio.com" className={inputClasses} />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder={t("emailPlaceholder")}
+            className={inputClasses}
+          />
         </div>
       </div>
 
       <div>
         <label htmlFor="subject" className="mb-2 block text-xs font-medium uppercase tracking-wide text-white/40">
-          Subject
+          {t("subjectLabel")}
         </label>
-        <input id="subject" name="subject" type="text" placeholder="What's this about?" className={inputClasses} />
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          placeholder={t("subjectPlaceholder")}
+          className={inputClasses}
+        />
       </div>
 
       <div>
         <label htmlFor="message" className="mb-2 block text-xs font-medium uppercase tracking-wide text-white/40">
-          Message
+          {t("messageLabel")}
         </label>
         <textarea
           id="message"
           name="message"
           required
           rows={5}
-          placeholder="Tell us a bit more..."
+          placeholder={t("messagePlaceholder")}
           className={`${inputClasses} resize-none`}
         />
       </div>
@@ -70,7 +90,7 @@ export default function ContactForm() {
         disabled={pending}
         className="w-full rounded-full bg-white px-8 py-3 text-sm font-medium text-black transition-colors hover:bg-white/90 disabled:opacity-50 sm:w-auto"
       >
-        {pending ? "Sending..." : "Send message"}
+        {pending ? t("sending") : t("send")}
       </button>
     </form>
   );

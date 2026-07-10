@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { SiInstagram, SiTiktok } from "react-icons/si";
 
@@ -20,7 +21,9 @@ const SOCIAL_LINKS = [
   },
 ];
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("Footer");
+
   return (
     <div className="relative bg-black px-6 pt-16 pb-8">
       <div className="mx-auto max-w-6xl">
@@ -35,9 +38,7 @@ export default function Footer() {
                 SEWRIO
               </span>
             </div>
-            <p className="max-w-xs text-sm leading-relaxed text-white/40">
-              AI-powered digital sewing pattern &amp; fashion platform.
-            </p>
+            <p className="max-w-xs text-sm leading-relaxed text-white/40">{t("tagline")}</p>
           </div>
 
           <div className="flex items-center gap-3">
@@ -57,8 +58,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/10 pt-8 sm:flex-row sm:justify-between">
-          <p className="text-xs text-white/30">© 2025 Sewrio. All rights reserved.</p>
-          <p className="text-xs text-white/30">Made for makers.</p>
+          <p className="text-xs text-white/30">{t("copyright")}</p>
+          <p className="text-xs text-white/30">{t("madeFor")}</p>
         </div>
       </div>
     </div>

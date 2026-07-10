@@ -1,27 +1,34 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
 import Reveal from "./Reveal";
 import { StitchDivider } from "./SewingIcons";
-import { FAQ_ITEMS as QUESTIONS } from "../data/faq";
+import { Link } from "@/i18n/navigation";
+
+type FAQItem = { q: string; a: string };
 
 export default function FAQ({ variant = "full" }: { variant?: "teaser" | "full" }) {
+  const t = useTranslations("FAQSection");
+  const tItems = useTranslations("FAQItems");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const questions = variant === "teaser" ? QUESTIONS.slice(0, 3) : QUESTIONS;
+  const allQuestions = tItems.raw("items") as FAQItem[];
+  const questions = variant === "teaser" ? allQuestions.slice(0, 3) : allQuestions;
 
   return (
     <section id="faq" className="relative bg-black px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl">
         <Reveal>
           <div className="text-center">
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">FAQ</span>
+            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
+              {t("eyebrow")}
+            </span>
             <h2
               className="mt-4 text-4xl md:text-5xl text-white tracking-tight"
               style={{ fontFamily: "'Instrument Serif', serif" }}
             >
-              Questions, <em className="italic">answered</em>.
+              {t.rich("heading", { em: (chunks) => <em className="italic">{chunks}</em> })}
             </h2>
             <StitchDivider className="mx-auto mt-8 h-3 w-40 text-white/20" />
           </div>
@@ -67,7 +74,7 @@ export default function FAQ({ variant = "full" }: { variant?: "teaser" | "full" 
               href="/faq"
               className="liquid-glass inline-block rounded-full px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5"
             >
-              See all FAQs
+              {t("seeAll")}
             </Link>
           </div>
         )}

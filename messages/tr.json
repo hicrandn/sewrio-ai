@@ -114,16 +114,16 @@
   "WhatWeDoTeaser": {
     "features": [
       {
-        "title": "Yapay Zeka ile Kalıp Üretimi",
-        "description": "Tasarımını sade bir dille anlat, dakikalar içinde üretime hazır bir dikiş kalıbı al."
+        "title": "AI ile Kalıp Üretimi",
+        "description": "Kıyafetin fotoğrafını yükle, dakikalar içinde üretime hazır bir dikiş kalıbı al."
       },
       {
-        "title": "Akıllı Gradeleme",
-        "description": "Her kalıbı bedenler arasında otomatik olarak ölçeklendir; her eğride hassas bir uyum sağlanır."
+        "title": "Akıllı Gradasyon",
+        "description": "Kalıbını tüm bedenlere otomatik ölçekle; her hat, doğru kalıba göre ayarlanır."
       },
       {
         "title": "Dijital Kumaş Simülasyonu",
-        "description": "Tek bir parça bile kesmeden önce, seçtiğin kumaşta dökümü, uyumu ve hareketi önizle."
+        "description": "Seçtiğin kumaşta duruşu ve oturuşu, tek parça kesmeden önce ekranda gör."
       }
     ]
   },

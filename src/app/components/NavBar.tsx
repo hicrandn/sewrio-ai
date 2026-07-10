@@ -1,25 +1,95 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Globe, Menu, X } from "lucide-react";
 
 const NAV_HREFS = ["/what-we-do", "/why-us", "/blog", "/faq", "/contact"] as const;
 
 const LOCALE_LABELS: Record<string, string> = {
-  en: "EN",
-  tr: "TR",
+  en: "English",
+  tr: "Türkçe",
   zh: "中文",
 };
 
-export default function NavBar() {
-  const [open, setOpen] = useState(false);
+function LocaleSwitcher({ align = "right" }: { align?: "left" | "right" }) {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointerDown = (event: MouseEvent) => {
+      if (rootRef.current && !rootRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [open]);
+
+  const switchLocale = (nextLocale: string) => {
+    router.replace(pathname, { locale: nextLocale });
+    setOpen(false);
+  };
+
+  return (
+    <div ref={rootRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((value) => !value)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        className="liquid-glass flex items-center gap-1.5 rounded-full px-3 py-2 text-xs font-medium text-white/80 transition-colors hover:text-white"
+      >
+        <Globe size={14} />
+        {LOCALE_LABELS[locale]}
+        <ChevronDown size={12} className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </button>
+
+      {open && (
+        <div
+          role="listbox"
+          className={`absolute top-full z-30 mt-2 min-w-34 overflow-hidden rounded-2xl border border-white/10 bg-neutral-950 py-1 shadow-2xl ${
+            align === "right" ? "right-0" : "left-0"
+          }`}
+        >
+          {routing.locales.map((l) => (
+            <button
+              key={l}
+              type="button"
+              role="option"
+              aria-selected={l === locale}
+              onClick={() => switchLocale(l)}
+              className={`block w-full px-4 py-2.5 text-left text-sm transition-colors ${
+                l === locale ? "bg-white/10 text-white" : "text-white/70 hover:bg-white/5 hover:text-white"
+              }`}
+            >
+              {LOCALE_LABELS[l]}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function NavBar() {
+  const [open, setOpen] = useState(false);
   const t = useTranslations("NavBar");
 
   const NAV_LINKS = [
@@ -29,29 +99,6 @@ export default function NavBar() {
     { href: NAV_HREFS[3], label: t("faq") },
     { href: NAV_HREFS[4], label: t("contact") },
   ];
-
-  const switchLocale = (nextLocale: string) => {
-    router.replace(pathname, { locale: nextLocale });
-    setOpen(false);
-  };
-
-  const renderLocaleSwitcher = (className = "") => (
-    <div className={`flex items-center gap-1 text-xs font-medium ${className}`}>
-      {routing.locales.map((l) => (
-        <button
-          key={l}
-          type="button"
-          onClick={() => switchLocale(l)}
-          aria-current={l === locale}
-          className={`rounded-full px-2.5 py-1 transition-colors ${
-            l === locale ? "bg-white/10 text-white" : "text-white/50 hover:text-white"
-          }`}
-        >
-          {LOCALE_LABELS[l]}
-        </button>
-      ))}
-    </div>
-  );
 
   return (
     <nav className="relative z-20 px-6 py-4">
@@ -76,7 +123,9 @@ export default function NavBar() {
         </div>
 
         <div className="col-start-3 flex items-center justify-self-end gap-3">
-          {renderLocaleSwitcher("liquid-glass hidden rounded-full px-1.5 py-1.5 md:flex")}
+          <div className="hidden md:block">
+            <LocaleSwitcher />
+          </div>
 
           <button
             type="button"
@@ -111,7 +160,9 @@ export default function NavBar() {
                     {label}
                   </Link>
                 ))}
-                {renderLocaleSwitcher("justify-center border-t border-white/10 pt-3 mt-2")}
+                <div className="mt-2 flex justify-center border-t border-white/10 pt-3">
+                  <LocaleSwitcher align="left" />
+                </div>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ export default function Footer() {
                 className="text-lg font-medium tracking-tight text-white"
                 style={{ fontFamily: "'Instrument Serif', serif" }}
               >
-                Sewrio
+                SEWRIO
               </span>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-white/40">

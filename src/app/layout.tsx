@@ -13,16 +13,50 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_NAME = "Sewrio";
+const SITE_DESCRIPTION =
+  "Sewrio turns your sketches into perfectly cut digital sewing patterns in seconds — an AI-powered pattern-making and fashion platform for designers and makers.";
+
 export const metadata: Metadata = {
-  title: "Sewrio",
-  description: "Sewrio is a platform for creating and sharing sewing patterns.",
+  metadataBase: new URL("https://sewrio.com"),
+  title: {
+    default: "Sewrio — AI-Powered Sewing Patterns & Fashion Platform",
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "sewing patterns",
+    "AI sewing patterns",
+    "digital sewing patterns",
+    "pattern making software",
+    "fashion design platform",
+    "custom sewing patterns",
+  ],
+  alternates: {
+    canonical: "/",
+  },
   icons: {
-    icon: "/images/logo.png",
+    icon: "/images/logo-dark.png",
   },
   openGraph: {
-    title: "Sewrio",
-    description: "Sewrio is a platform for creating and sharing sewing patterns.",
-    url: "https://sewrio.com",
+    type: "website",
+    siteName: SITE_NAME,
+    title: "Sewrio — AI-Powered Sewing Patterns & Fashion Platform",
+    description: SITE_DESCRIPTION,
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sewrio — AI-Powered Sewing Patterns & Fashion Platform",
+    description: SITE_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 

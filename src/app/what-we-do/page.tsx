@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import NavBar from "../components/NavBar";
 import Reveal from "../components/Reveal";
 import WhatWeDoSlider from "../components/WhatWeDoSlider";
+
+export const metadata: Metadata = {
+  title: "What We Do",
+  description:
+    "From sketch to pattern, instantly. See how Sewrio's AI turns your designs into precise, production-ready sewing patterns.",
+  alternates: {
+    canonical: "/what-we-do",
+  },
+  openGraph: {
+    title: "What We Do | Sewrio",
+    description:
+      "From sketch to pattern, instantly. See how Sewrio's AI turns your designs into precise, production-ready sewing patterns.",
+    url: "/what-we-do",
+  },
+};
 
 export default function WhatWeDoPage() {
   return (

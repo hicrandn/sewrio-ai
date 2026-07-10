@@ -1,20 +1,17 @@
 "use client";
 
-import { useState } from "react";
-import type { FormEvent } from "react";
+import { useActionState } from "react";
+import { sendContactMessage, type ContactFormState } from "../contact/actions";
 
 const inputClasses =
   "w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/30";
 
+const initialState: ContactFormState = { status: "idle" };
+
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [state, formAction, pending] = useActionState(sendContactMessage, initialState);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
-  if (submitted) {
+  if (state.status === "success") {
     return (
       <div className="liquid-glass rounded-3xl p-10 text-center">
         <h3 className="text-lg font-semibold text-white">Message sent.</h3>
@@ -26,7 +23,12 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="liquid-glass space-y-5 rounded-3xl p-8 sm:p-10 text-left">
+    <form action={formAction} className="liquid-glass space-y-5 rounded-3xl p-8 sm:p-10 text-left">
+      {state.status === "error" && (
+        <p className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+          {state.message}
+        </p>
+      )}
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-2 block text-xs font-medium uppercase tracking-wide text-white/40">
@@ -65,9 +67,10 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full rounded-full bg-white px-8 py-3 text-sm font-medium text-black transition-colors hover:bg-white/90 sm:w-auto"
+        disabled={pending}
+        className="w-full rounded-full bg-white px-8 py-3 text-sm font-medium text-black transition-colors hover:bg-white/90 disabled:opacity-50 sm:w-auto"
       >
-        Send message
+        {pending ? "Sending..." : "Send message"}
       </button>
     </form>
   );

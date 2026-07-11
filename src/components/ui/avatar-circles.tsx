@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils"
 
 interface Avatar {
   imageUrl: string
-  profileUrl: string
 }
 interface AvatarCirclesProps {
   className?: string
@@ -20,11 +19,8 @@ export const AvatarCircles = ({
   return (
     <div className={cn("z-10 flex -space-x-4 rtl:space-x-reverse", className)}>
       {avatarUrls.map((url, index) => (
-        <a
+        <div
           key={index}
-          href={url.profileUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="liquid-glass relative block h-10 w-10 overflow-hidden rounded-full ring-2 ring-black"
         >
           <img
@@ -34,15 +30,12 @@ export const AvatarCircles = ({
             height={40}
             alt={`Avatar ${index + 1}`}
           />
-        </a>
+        </div>
       ))}
       {(numPeople ?? 0) > 0 && (
-        <a
-          className="liquid-glass flex h-10 w-10 items-center justify-center rounded-full text-center text-xs font-medium text-white ring-2 ring-black transition-colors hover:bg-white/5"
-          href=""
-        >
+        <div className="liquid-glass flex h-10 w-10 items-center justify-center rounded-full text-center text-xs font-medium text-white ring-2 ring-black">
           +{numPeople}
-        </a>
+        </div>
       )}
     </div>
   )

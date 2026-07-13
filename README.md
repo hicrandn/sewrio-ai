@@ -25,3 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the result.
 - `npm run build` — production build
 - `npm run start` — start production server
 - `npm run lint` — run linter
+
+
+<img width="1470" height="698" alt="image" src="https://github.com/user-attachments/assets/997fa6dd-8b96-499c-939a-546b82b9cf63" />
+

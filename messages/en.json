@@ -132,17 +132,18 @@
     "heading": "Notes from the <em>studio</em>.",
     "readMore": "Read more",
     "viewAll": "View all posts",
-    "allPosts": "All posts"
+    "allPosts": "All posts",
+    "relatedPosts": "Related posts"
   },
   "BlogPageMeta": {
     "title": "Blog",
-    "description": "Notes from the Sewrio studio — behind-the-scenes stories on AI-powered pattern making, sewing, and fashion technology."
+    "description": "Notes from the Sewrio studio — behind-the-scenes stories on AI-powered pattern making, sewing techniques, and the future of fashion technology."
   },
   "BlogPosts": {
     "seam-allowance-hardest-thing-to-automate": {
       "date": "Jun 2026",
       "title": "Why seam allowance is the hardest thing to automate",
-      "excerpt": "The math is easy. Getting a machine to think like a pattern maker is not.",
+      "excerpt": "The math is easy. Getting a machine to think like a pattern maker is not — here's what it actually took to teach an AI where a seam allowance belongs.",
       "content": [
         "Seam allowance looks like a solved problem from the outside — add a fixed offset around every pattern piece and you're done. In practice, the right allowance depends on the fabric, the seam type, the machine that will sew it, and the finishing method, and it changes piece by piece across a single garment.",
         "A curved princess seam on a woven bodice wants a narrower allowance than a straight side seam on heavy denim. A serged knit hem behaves nothing like a bound edge. None of that is written down anywhere a model can simply read it — it lives in the judgment of people who have cut thousands of garments.",
@@ -152,7 +153,7 @@
     "grading-rules-from-vintage-tailoring-books": {
       "date": "May 2026",
       "title": "Grading rules we borrowed from vintage tailoring books",
-      "excerpt": "Some of the best sizing logic we use is over eighty years old.",
+      "excerpt": "Some of the best sizing logic we use is over eighty years old — how a stack of vintage tailoring books ended up shaping our grading algorithm.",
       "content": [
         "Modern grading software tends to treat sizing as pure interpolation — scale every point on the pattern by the same ratio and call it a size range. Tailors from the mid-20th century knew better: some measurements grow faster than others as a body scales, and grading in a straight line produces garments that fit worse the further you get from the sample size.",
         "We went back to tailoring references from the 1930s–1950s to study how experienced pattern graders distributed ease non-uniformly across a size range — more growth through the bust and hip, less through the neckline and wrist.",
@@ -162,7 +163,7 @@
     "from-prompt-to-production-pattern-in-one-afternoon": {
       "date": "Apr 2026",
       "title": "From prompt to production pattern in one afternoon",
-      "excerpt": "A behind-the-scenes look at how one designer shipped her first collection.",
+      "excerpt": "A behind-the-scenes look at how one independent designer went from a rough prompt to a production-ready pattern and shipped her first collection.",
       "content": [
         "An independent designer came to us with sketches for a six-piece capsule collection and a production deadline three weeks out. Normally, turning sketches into graded, cutter-ready patterns for a full size range takes a pattern maker days per style.",
         "Working directly in Sewrio, she described each silhouette in plain language, adjusted fit and ease interactively, and exported production-ready DXF files the same afternoon — with every piece graded across her full size range and seam allowances set per fabric.",
@@ -179,7 +180,7 @@
   },
   "ContactPageMeta": {
     "title": "Contact",
-    "description": "Get in touch with the Sewrio team — questions, partnership ideas, or feedback. We read every message."
+    "description": "Get in touch with the Sewrio team about questions, partnership ideas, feature requests, or feedback — we personally read and reply to every message."
   },
   "ContactForm": {
     "nameLabel": "Name",
@@ -202,7 +203,7 @@
   },
   "WhyUsPageMeta": {
     "title": "Why Sewrio",
-    "description": "Built by people who sew. Discover why designers and makers choose Sewrio for fast, accurate, AI-powered pattern making."
+    "description": "Built by people who sew. Discover why designers and makers around the world choose Sewrio for fast, accurate, AI-powered pattern making every day."
   },
   "NotFound": {
     "metaTitle": "Page Not Found",

@@ -1,7 +1,7 @@
 {
   "WhatWeDoPage": {
     "title": "Ne Yapıyoruz",
-    "description": "Sewrio'nun yapay zekası tasarımlarını nasıl hassas, üretime hazır dikiş kalıplarına dönüştürüyor, gör.",
+    "description": "Eskizden kalıba, anında. Sewrio'nun yapay zekasının tasarımlarınızı nasıl hassas, üretime hazır dikiş kalıplarına dönüştürdüğünü keşfedin.",
     "eyebrow": "Ne yapıyoruz?",
     "heading": "Taslaktan <em>kalıba</em>, anında."
   },
@@ -132,7 +132,8 @@
     "heading": "Stüdyodan <em>notlar</em>.",
     "readMore": "Devamını oku",
     "viewAll": "Tüm yazıları gör",
-    "allPosts": "Tüm yazılar"
+    "allPosts": "Tüm yazılar",
+    "relatedPosts": "İlgili yazılar"
   },
   "BlogPageMeta": {
     "title": "Blog",
@@ -142,7 +143,7 @@
     "seam-allowance-hardest-thing-to-automate": {
       "date": "Haz 2026",
       "title": "Dikiş payı neden otomatikleştirmesi en zor şey",
-      "excerpt": "Matematiği kolay. Bir makineyi bir kalıpçı gibi düşündürmek değil.",
+      "excerpt": "Matematiği kolay ama bir makineyi gerçek bir kalıpçı gibi düşündürmek öyle değil — payını nereye koyacağını öğretmek aylarımızı aldı.",
       "content": [
         "Dikiş payı dışarıdan bakınca çözülmüş bir problem gibi görünür — her kalıp parçasının etrafına sabit bir pay ekle, işin biter. Pratikte doğru pay; kumaşa, dikiş tipine, o dikişi yapacak makineye ve bitirme yöntemine göre değişir, hatta tek bir kıyafet üzerinde parçadan parçaya farklılaşır.",
         "Dokuma bir korsajdaki kavisli prenses dikişi, kalın kot üzerindeki düz bir yan dikişten daha dar bir pay ister. Overlok yapılmış bir triko eteği, bantlanmış bir kenar gibi davranmaz. Bunların hiçbiri bir modelin doğrudan okuyabileceği bir yerde yazılı değildir — binlerce kıyafet kesmiş insanların muhakemesinde yaşar.",
@@ -152,7 +153,7 @@
     "grading-rules-from-vintage-tailoring-books": {
       "date": "May 2026",
       "title": "Eski terzilik kitaplarından ödünç aldığımız gradeleme kuralları",
-      "excerpt": "Kullandığımız en iyi beden mantığının bir kısmı seksen yıldan eski.",
+      "excerpt": "Kullandığımız en iyi beden mantığının bir kısmı seksen yıldan eski — eski terzi kitaplarının kalıp derecelendirme algoritmamızı nasıl şekillendirdiği.",
       "content": [
         "Modern gradeleme yazılımları bedenlendirmeyi genelde saf bir enterpolasyon olarak ele alır — kalıptaki her noktayı aynı oranla ölçekle ve buna beden aralığı de. 20. yüzyıl ortasının terzileri daha iyisini biliyordu: beden büyüdükçe bazı ölçüler diğerlerinden daha hızlı büyür, ve düz bir çizgide gradeleme, numune bedenden uzaklaştıkça daha kötü oturan kıyafetler üretir.",
         "1930'lar-1950'ler arasındaki terzilik kaynaklarına dönüp, deneyimli kalıp gradecilerinin payı bir beden aralığında nasıl eşit olmayan şekilde dağıttığını inceledik — göğüs ve kalçada daha fazla büyüme, yaka ve bilekte daha az.",
@@ -162,7 +163,7 @@
     "from-prompt-to-production-pattern-in-one-afternoon": {
       "date": "Nis 2026",
       "title": "Bir öğleden sonrada komuttan üretim kalıbına",
-      "excerpt": "Bir tasarımcının ilk koleksiyonunu nasıl çıkardığına perde arkasından bir bakış.",
+      "excerpt": "Bir tasarımcının rastgele bir fikirden üretime hazır bir kalıba, sonra da ilk koleksiyonuna nasıl ulaştığına perde arkasından bir bakış.",
       "content": [
         "Bağımsız bir tasarımcı, altı parçalık bir kapsül koleksiyon için taslaklarla ve üç hafta sonrasına ayarlı bir üretim teslim tarihiyle bize geldi. Normalde taslakları tam bir beden aralığı için gradelenmiş, kesime hazır kalıplara dönüştürmek, bir kalıpçının stil başına günler harcamasını gerektirir.",
         "Doğrudan Sewrio içinde çalışarak, her silueti sade bir dille tarif etti, uyumu ve payı interaktif olarak ayarladı ve aynı öğleden sonra üretime hazır DXF dosyalarını dışa aktardı — her parça tam beden aralığında gradelenmiş ve dikiş payları kumaşa göre ayarlanmış olarak.",
@@ -179,7 +180,7 @@
   },
   "ContactPageMeta": {
     "title": "İletişim",
-    "description": "Sewrio ekibiyle iletişime geç — sorular, iş birliği fikirleri veya geri bildirim. Her mesajı okuyoruz."
+    "description": "Sewrio ekibiyle iletişime geç — sorular, iş birliği fikirleri, özellik istekleri veya geri bildirim için yaz; gelen her mesajı okuyup yanıtlıyoruz."
   },
   "ContactForm": {
     "nameLabel": "İsim",

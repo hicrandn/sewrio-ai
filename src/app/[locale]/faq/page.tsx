@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import NavBar from "../../components/NavBar";
 import FAQ from "../../components/FAQ";
+import { STATIC_ROUTE_DATES } from "../../data/content-dates";
 import { getPathname } from "@/i18n/navigation";
 
 const TITLE = "FAQ";
@@ -36,6 +37,7 @@ export default async function FAQPage({ params }: Props) {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    dateModified: STATIC_ROUTE_DATES["/faq"],
     mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.q,

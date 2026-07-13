@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { getPathname } from "@/i18n/navigation";
+import { STATIC_ROUTE_DATES } from "../data/content-dates";
 import Footer from "../components/Footer";
 import "../globals.css";
 
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
 
   return {
-    metadataBase: new URL("https://sewrio.com"),
+    metadataBase: new URL("https://www.sewrio.com"),
     title: {
       default: "Sewrio — AI-Powered Sewing Patterns & Fashion Platform",
       template: `%s | ${SITE_NAME}`,
@@ -90,8 +91,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: SITE_NAME,
-  url: "https://sewrio.com",
-  logo: "https://sewrio.com/images/logo.png",
+  url: "https://www.sewrio.com",
+  logo: "https://www.sewrio.com/images/logo.png",
   description: SITE_DESCRIPTION,
   sameAs: [
     "https://www.linkedin.com/company/sewrio/",
@@ -104,7 +105,8 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: SITE_NAME,
-  url: "https://sewrio.com",
+  url: "https://www.sewrio.com",
+  dateModified: STATIC_ROUTE_DATES["/"],
 };
 
 export default async function RootLayout({ children, params }: Props) {

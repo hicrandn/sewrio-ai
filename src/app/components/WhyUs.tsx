@@ -15,14 +15,30 @@ export default async function WhyUs({ variant = "full" }: { variant?: "teaser" |
       <div className="mx-auto max-w-6xl">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <Reveal>
-            <div className="liquid-glass relative aspect-3/2 overflow-hidden rounded-3xl">
+            <div className="group liquid-glass relative aspect-3/2 overflow-hidden rounded-3xl">
               <Image
-                src="/images/1.jpg"
-                alt="Sewrio garment construction"
+                src="/images/7.jpg"
+                alt="Dress forms in the atelier"
                 fill
-                className="object-cover"
+                className="object-cover object-[50%_30%] transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+              <span className="absolute top-5 left-5 rounded-full bg-black/40 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm">
+                {t("badge")}
+              </span>
+
+              <div className="absolute right-4 bottom-4 w-[30%] overflow-hidden rounded-xl border border-white/15 shadow-2xl shadow-black/60 transition-transform duration-500 ease-out group-hover:-translate-y-1 sm:right-5 sm:bottom-5">
+                <div className="relative aspect-4/5">
+                  <Image
+                    src="/images/ai.png"
+                    alt="Sewrio AI app on a phone"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 15vw, 30vw"
+                  />
+                </div>
+              </div>
             </div>
           </Reveal>
 

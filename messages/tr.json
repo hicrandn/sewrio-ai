@@ -138,51 +138,57 @@
   },
   "BlogPageMeta": {
     "title": "Blog",
-    "description": "Sewrio stüdyosundan notlar — yapay zeka destekli kalıp üretimi, dikiş ve moda teknolojisi üzerine perde arkası hikayeler."
+    "description": "Sewrio stüdyosundan notlar: yapay zeka destekli kalıp üretimi, dikiş ve moda teknolojisi üzerine perde arkası hikayeler."
   },
   "BlogPosts": {
     "why-i-started-building-sewrio": {
       "date": "Tem 2026",
       "title": "Sewrio'yu kurmaya neden başladım",
-      "excerpt": "Her şey satın alamadığım bir elbiseyle ve elbisenin kendisinden daha pahalıya mal olan özel bir dikiş kalıbıyla başladı — sıradan bir kişisel sorunun nasıl bir yapay zeka kalıp üretim platformuna dönüştüğü.",
+      "excerpt": "Her şey satın alamadığım bir elbiseyle ve elbisenin kendisinden daha pahalıya mal olan özel bir dikiş kalıbıyla başladı sıradan bir kişisel sorunun nasıl bir yapay zeka kalıp üretim platformuna dönüştüğü.",
       "content": [
         "İnsanlar sık sık neden yapay zeka destekli bir kalıp üretim platformu kurmaya karar verdiğimi soruyor. Gerçek şu ki, bir moda teknolojisi şirketi kurmayı hiç planlamamıştım. Her şey bir elbiseyle başladı.",
         "Yurt dışından bir markaya ait, tam aradığım gibi güzel bir elbise bulmuştum. Şirket Türkiye'ye gönderim yapmıyordu ve hiçbir alternatif ona yaklaşamadı bile. Kendi kendime, 'Bunu kendim dikersem olmaz mı?' diye düşündüm.",
-        "Profesyonel bir kalıpçılık becerim olmadığı için, fotoğraflardan kalıbı çıkarması için birine ulaştım. Fiyat beni şok etti — tek bir özel kalıp, elbisenin kendisinden bile daha pahalıya geliyordu; bu da elbiseyi dikmeye değip değmeyeceğini sorgulamama yetti. Garip geldi: yapay zeka görsel üretebiliyor, kod yazabiliyor, müzik besteleyebiliyor, hatta yeni ilaçların keşfine yardım edebiliyor; ama bir kıyafet fotoğrafından kullanılabilir bir dikiş kalıbı çıkarmak hâlâ pahalı, elle yapılan bir hizmetti.",
+        "Profesyonel bir kalıpçılık becerim olmadığı için, fotoğraflardan kalıbı çıkarması için birine ulaştım. Fiyat beni şok etti tek bir özel kalıp, elbisenin kendisinden bile daha pahalıya geliyordu; bu da elbiseyi dikmeye değip değmeyeceğini sorgulamama yetti. Garip geldi: yapay zeka görsel üretebiliyor, kod yazabiliyor, müzik besteleyebiliyor, hatta yeni ilaçların keşfine yardım edebiliyor; ama bir kıyafet fotoğrafından kullanılabilir bir dikiş kalıbı çıkarmak hâlâ pahalı, elle yapılan bir hizmetti.",
         "Moleküler Biyoloji ve Genetik ile Mühendislik geçmişimle içgüdüm basitti: 'Yapay zeka bunu kesin çözebilir.' Var olan araçları, görüntü işleme çözümlerini ve farklı bilgisayarlı görü modellerini denedim. Bazıları kıyafeti tanıyabiliyordu. Bazıları parçalarına ayırabiliyordu. Bazıları şekli tahmin edebiliyordu. Ama hiçbiri kumaştan kesip dikebileceğin, gerçekten kullanılabilir bir kalıp üretemiyordu.",
-        "İşte o an anladım ki asıl zorluk kıyafeti tanımak değildi — kıyafetin nasıl kurgulandığını anlamaktı. Bir dikiş kalıbı sadece bir dış hat değildir; oranları, konstrüksiyon mantığını, pay değerlerini, kavisleri, dikiş ilişkilerini ve on yıllara dayanan kalıpçılık bilgisini barındırır. Bu bir görüntü tanıma problemi değildi. Bu bir çeviri problemiydi: iki boyutlu bir fotoğrafı, üretilebilir bir dijital kalıba dönüştürmek.",
-        "Önce sadece kendim için araçlar yapmaya başladım, tekrarlayan işi ortadan kaldırmak için. Sonra binlerce üreticinin, moda öğrencisinin, bağımsız tasarımcının ve küçük işletmenin aynı duvara çarptığını fark ettim — saatlerce elle kalıp çizmek, özel çalışma için yüksek ücretler ödemek ya da sevdikleri bir tasarımdan tamamen vazgeçmek. İşte o zaman proje kişisel bir denemeden çıkıp Sewrio'ya dönüştü.",
-        "Sewrio, dijital kalıp oluşturmayı herkes için erişilebilir kılma çabamız; bilgisayarlı görü, yapay zeka ve parametrik kalıp üretimini bir araya getirerek kıyafet üretiminin önündeki en büyük engellerden birini kaldırıyoruz. Amacımız kalıpçıların yerini almak değil — üreticilere daha akıllı bir başlangıç noktası sunarak, tekrarlayan teknik işlere daha az, tasarıma daha çok zaman ayırmalarını sağlamak. Türkiye'ye gönderilemeyen o elbise, tamamen yeni bir yolculuğun başlangıcı oldu. Bazen en iyi projeler parlak bir iş fikriyle değil, sinir bozucu kişisel bir sorunla başlar. Sewrio, benimkiyle başladı."
+        "İşte o an anladım ki asıl zorluk kıyafeti tanımak değildi kıyafetin nasıl kurgulandığını anlamaktı. Bir dikiş kalıbı sadece bir dış hat değildir; oranları, konstrüksiyon mantığını, pay değerlerini, kavisleri, dikiş ilişkilerini ve on yıllara dayanan kalıpçılık bilgisini barındırır. Bu bir görüntü tanıma problemi değildi. Bu bir çeviri problemiydi: iki boyutlu bir fotoğrafı, üretilebilir bir dijital kalıba dönüştürmek.",
+        "Önce sadece kendim için araçlar yapmaya başladım, tekrarlayan işi ortadan kaldırmak için. Sonra binlerce üreticinin, moda öğrencisinin, bağımsız tasarımcının ve küçük işletmenin aynı duvara çarptığını fark ettim saatlerce elle kalıp çizmek, özel çalışma için yüksek ücretler ödemek ya da sevdikleri bir tasarımdan tamamen vazgeçmek. İşte o zaman proje kişisel bir denemeden çıkıp Sewrio'ya dönüştü.",
+        "Sewrio, dijital kalıp oluşturmayı herkes için erişilebilir kılma çabamız; bilgisayarlı görü, yapay zeka ve parametrik kalıp üretimini bir araya getirerek kıyafet üretiminin önündeki en büyük engellerden birini kaldırıyoruz. Amacımız kalıpçıların yerini almak değil üreticilere daha akıllı bir başlangıç noktası sunarak, tekrarlayan teknik işlere daha az, tasarıma daha çok zaman ayırmalarını sağlamak. Türkiye'ye gönderilemeyen o elbise, tamamen yeni bir yolculuğun başlangıcı oldu. Bazen en iyi projeler parlak bir iş fikriyle değil, sinir bozucu kişisel bir sorunla başlar. Sewrio, benimkiyle başladı."
       ]
     },
-    "seam-allowance-hardest-thing-to-automate": {
+    "how-to-read-a-sewing-pattern-beginners-guide": {
       "date": "Haz 2026",
-      "title": "Dikiş payı neden otomatikleştirmesi en zor şey",
-      "excerpt": "Matematiği kolay ama bir makineyi gerçek bir kalıpçı gibi düşündürmek öyle değil — payını nereye koyacağını öğretmek aylarımızı aldı.",
+      "title": "Dikiş Kalıbı Nasıl Okunur? (Başlangıç Rehberi)",
+      "excerpt": "Kalıp sembolleri, çizgiler ve işaretler sade bir dille anlatıldı; zarftan kesim masasına tahmin yürütmeden geçebilesin.",
       "content": [
-        "Dikiş payı dışarıdan bakınca çözülmüş bir problem gibi görünür — her kalıp parçasının etrafına sabit bir pay ekle, işin biter. Pratikte doğru pay; kumaşa, dikiş tipine, o dikişi yapacak makineye ve bitirme yöntemine göre değişir, hatta tek bir kıyafet üzerinde parçadan parçaya farklılaşır.",
-        "Dokuma bir korsajdaki kavisli prenses dikişi, kalın kot üzerindeki düz bir yan dikişten daha dar bir pay ister. Overlok yapılmış bir triko eteği, bantlanmış bir kenar gibi davranmaz. Bunların hiçbiri bir modelin doğrudan okuyabileceği bir yerde yazılı değildir — binlerce kıyafet kesmiş insanların muhakemesinde yaşar.",
-        "Bunu doğru yapmak, Sewrio'yu sadece geometri kurallarıyla değil, çalışan kalıpçılar tarafından açıklamalı gerçek kalıp setleriyle eğitmek anlamına geldi. Sonuç, dikiş payını sabit bir değer değil, kumaşa ve konstrüksiyona bağlı bir tasarım kararı olarak ele alan bir motor."
+        "Her dikiş kalıbı ilk açıldığında kafa karıştırıcı görünen çizgiler, semboller ve kısaltmalarla doludur. Her işaretin ne anlama geldiğini öğrendiğinde ise kalıp bir bilmece olmaktan çıkar, güvenle takip edebileceğin bir talimatlar bütününe dönüşür.",
+        "Dış kesim çizgisiyle başla; genelde makasının nereye gideceğini gösteren düz bir çizgidir bu. Hemen içindeki kesikli çizgi ise dikiş çizgisini gösterir, yani pay katlandıktan sonra dikişlerinin gerçekte oturacağı yeri.",
+        "İplik yönü okları, kalıp parçasını kumaş üzerine nasıl yerleştireceğini gösterir; dikildikten sonra kumaşın doğru düşmesi için her zaman kumaşın kenarına paralel olmalıdır. Genelde oklarla işaretli bir köşe parantezi şeklindeki 'katta kes' sembolü, o parçanın tek kat değil, kumaşın katlı kenarında kesileceği anlamına gelir.",
+        "Dikiş kenarındaki küçük üçgenler ya da çizgiler olan çentikler, parçaları üretim sırasında doğru eşleştirmene yardımcı olmak için vardır. Daire ve noktalar ise pensin başladığı ve bittiği yerleri, cebin tutturulacağı noktayı ya da fermuar açıklığının başladığı yeri işaretler.",
+        "Beden bilgisi, kesim yerleşimi ve kumaş miktarı genelde kalıbın talimat sayfasında ayrı olarak, kullanılan tüm sembolleri açıklayan bir anahtarla birlikte verilir. Kesime başlamadan önce o anahtarı bir kez okumak, sonradan bir dikişte tahmin yürütmekten çok daha fazla zaman kazandırır."
       ]
     },
-    "grading-rules-from-vintage-tailoring-books": {
+    "how-to-print-pdf-sewing-patterns-at-home": {
       "date": "May 2026",
-      "title": "Eski terzilik kitaplarından ödünç aldığımız gradeleme kuralları",
-      "excerpt": "Kullandığımız en iyi beden mantığının bir kısmı seksen yıldan eski — eski terzi kitaplarının kalıp derecelendirme algoritmamızı nasıl şekillendirdiği.",
+      "title": "PDF Dikiş Kalıpları Evde Nasıl Yazdırılır?",
+      "excerpt": "Bir PDF dikiş kalıbını evindeki yazıcıda yazdırma, kontrol etme ve birleştirme adımları, baştan sona.",
       "content": [
-        "Modern gradeleme yazılımları bedenlendirmeyi genelde saf bir enterpolasyon olarak ele alır — kalıptaki her noktayı aynı oranla ölçekle ve buna beden aralığı de. 20. yüzyıl ortasının terzileri daha iyisini biliyordu: beden büyüdükçe bazı ölçüler diğerlerinden daha hızlı büyür, ve düz bir çizgide gradeleme, numune bedenden uzaklaştıkça daha kötü oturan kıyafetler üretir.",
-        "1930'lar-1950'ler arasındaki terzilik kaynaklarına dönüp, deneyimli kalıp gradecilerinin payı bir beden aralığında nasıl eşit olmayan şekilde dağıttığını inceledik — göğüs ve kalçada daha fazla büyüme, yaka ve bilekte daha az.",
-        "Bu kurallar, Sewrio'nun gradeleme motoruna aktarıldığında, bir beden aralığının uçlarında üretilen kalıpların neden hâlâ numune beden gibi oturduğunu, sadece onun ölçeklenmiş bir fotokopisi gibi görünmediğini açıklıyor."
+        "PDF dikiş kalıpları genelde standart kağıt boyutunda birden fazla sayfaya bölünecek şekilde hazırlanır; evde birleştirmen gereken bir yapboz gibi düşünebilirsin. Temiz ve doğru bir sonuç almak, sadece yazdır tuşuna basmaktan biraz fazlasını gerektirir.",
+        "En önemli ayar ölçektir. PDF görüntüleyicinin yazdırma penceresinde '%100' ya da 'Gerçek boyut' seçeneğini kullan, 'Sayfaya sığdır' ya da 'Küçülterek sığdır' seçeneklerini asla kullanma; ikisi de kalıbı küçültüp tüm ölçüleri bozar.",
+        "Neredeyse her PDF kalıpta genelde ilk sayfada basılı, 1 inç ya da 5 santimetrelik bir test karesi bulunur. Önce o sayfayı yazdır, sonra kareyi bir cetvelle ölç. Tam eşleşmiyorsa yazıcının ölçek ayarını değiştirip yeniden dene.",
+        "Yazdırmanın doğru olduğunu doğruladıktan sonra kalan sayfaları yazdır ve her sayfada basılı kılavuz çizgileri boyunca kenar boşluklarını kes. Sayfaları, dosyadaki küçük sayfa numaralarını ya da yerleşim şemasını kullanarak sırayla diz, sonra kesmeden önce kenar kenara bantla.",
+        "Yazıcın sadece mektup ya da A4 boyutunda kağıt kullanıyorsa, mevcutsa dosyanın 'kopyalama merkezi' ya da 'projeksiyon' sürümüne bak. Kopyalama merkezi dosyaları büyük ebatlı kağıda bir matbaada birleştirme derdi olmadan basılır; projeksiyon dosyaları ise kalıbı bir projektörle doğrudan kumaşın üzerine aktarmanı sağlar, yazdırma adımını tamamen atlar."
       ]
     },
-    "from-prompt-to-production-pattern-in-one-afternoon": {
+    "digital-vs-printed-sewing-patterns-which-is-better": {
       "date": "Nis 2026",
-      "title": "Bir öğleden sonrada komuttan üretim kalıbına",
-      "excerpt": "Bir tasarımcının rastgele bir fikirden üretime hazır bir kalıba, sonra da ilk koleksiyonuna nasıl ulaştığına perde arkasından bir bakış.",
+      "title": "Dijital mi Basılı mı? Hangi Dikiş Kalıbı Daha İyi?",
+      "excerpt": "Fiyat, saklama, düzenleme ve kullanım kolaylığı karşılaştırıldı; nasıl diktiğine göre hangi formatın sana daha uygun olduğuna karar ver.",
       "content": [
-        "Bağımsız bir tasarımcı, altı parçalık bir kapsül koleksiyon için taslaklarla ve üç hafta sonrasına ayarlı bir üretim teslim tarihiyle bize geldi. Normalde taslakları tam bir beden aralığı için gradelenmiş, kesime hazır kalıplara dönüştürmek, bir kalıpçının stil başına günler harcamasını gerektirir.",
-        "Doğrudan Sewrio içinde çalışarak, her silueti sade bir dille tarif etti, uyumu ve payı interaktif olarak ayarladı ve aynı öğleden sonra üretime hazır DXF dosyalarını dışa aktardı — her parça tam beden aralığında gradelenmiş ve dikiş payları kumaşa göre ayarlanmış olarak.",
-        "Koleksiyon zamanında sevk edildi. Bir zamanlar taslak ile kesim masası arasındaki darboğaz olan şey, sürecinin en hızlı kısmı haline geldi."
+        "Dikiş kalıpları bugün iki temel formatta gelir: fiziksel bir zarf olarak satın aldığın basılı kalıplar ve indirip ya kendin yazdırdığın ya da doğrudan aktardığın dijital kalıplar. İkisinin de gerçek avantajları var; daha iyi seçim genelde nasıl çalışmayı sevdiğine bağlı, biri diğerinden objektif olarak üstün olduğu için değil.",
+        "Basılı kalıplar elinize ulaştığı anda kullanıma hazırdır. Yazdırma, bantlama ya da ölçek kontrolü gerekmez, ve dikkatli kullanırsan pelür kağıdı birden fazla projede tekrar tekrar kullanılabilir. Bunun bedeli daha az esneklik: basılı bir kalıbı yeniden bedenlemek, pelürü elle çizmek ya da fiziksel olarak değiştirmek anlamına gelir.",
+        "Dijital kalıpların üretim ve dağıtım maliyeti daha düşüktür; bu genelde daha uygun bir fiyata yansır, ve kargo beklemeden anında elinize ulaşır. Kalıp bir dosya olarak var olduğu için, dahil edilen bedenler arasında geçiş yapmak bir öğleden sonrayı pelür kağıdıyla geçirmek yerine saniyeler sürer; katmanlı bir PDF ise sadece ihtiyacın olan bedeni yazdırmana izin verir.",
+        "Dijital bir kalıbın gerçek maliyeti evde ortaya çıkar: kağıt, mürekkep, sayfaları birbirine bantlamak için harcanan zaman ya da büyük ebatlı baskı için bir kopyalama merkezine gitmek. Sık dikiş diken biri için bu tek seferlik hazırlık, raf yeri kaplamayan bir kalıp kütüphanesine karşılık ödenen küçük bir bedeldir.",
+        "Ara sıra dikiş dikiyorsan ve hemen kesime başlayacak bir şey istiyorsan, basılı bir kalıbı geçmek zor. Farklı bedenlerde dikiyorsan, hızlı uyum ayarlamaları yapmak istiyorsan ya da bir çekmece dolusu pelür yerine dijital bir kütüphane oluşturmayı tercih ediyorsan, dijital kalıplar genelde daha uygun seçimdir; özellikle bir fotoğraf ya da eskizden doğrudan kalıp üreten araçlar bu formatı daha da pratik hale getirdikçe."
       ]
     }
   },

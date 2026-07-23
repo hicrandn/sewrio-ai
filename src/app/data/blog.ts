@@ -1,8 +1,8 @@
 export const BLOG_SLUGS = [
   "why-i-started-building-sewrio",
-  "seam-allowance-hardest-thing-to-automate",
-  "grading-rules-from-vintage-tailoring-books",
-  "from-prompt-to-production-pattern-in-one-afternoon",
+  "how-to-read-a-sewing-pattern-beginners-guide",
+  "how-to-print-pdf-sewing-patterns-at-home",
+  "digital-vs-printed-sewing-patterns-which-is-better",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
@@ -12,16 +12,16 @@ export const BLOG_DATES: Record<BlogSlug, { datePublished: string; dateModified:
     datePublished: "2026-07-23",
     dateModified: "2026-07-23",
   },
-  "seam-allowance-hardest-thing-to-automate": {
+  "how-to-read-a-sewing-pattern-beginners-guide": {
     datePublished: "2026-06-01",
-    dateModified: "2026-07-13",
+    dateModified: "2026-07-23",
   },
-  "grading-rules-from-vintage-tailoring-books": {
+  "how-to-print-pdf-sewing-patterns-at-home": {
     datePublished: "2026-05-01",
-    dateModified: "2026-07-13",
+    dateModified: "2026-07-23",
   },
-  "from-prompt-to-production-pattern-in-one-afternoon": {
+  "digital-vs-printed-sewing-patterns-which-is-better": {
     datePublished: "2026-04-01",
-    dateModified: "2026-07-13",
+    dateModified: "2026-07-23",
   },
 };

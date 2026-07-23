@@ -138,51 +138,57 @@
   },
   "BlogPageMeta": {
     "title": "Blog",
-    "description": "Notes from the Sewrio studio — behind-the-scenes stories on AI-powered pattern making, sewing techniques, and the future of fashion technology."
+    "description": "Notes from the Sewrio studio: behind-the-scenes stories on AI-powered pattern making, sewing techniques, and the future of fashion technology."
   },
   "BlogPosts": {
     "why-i-started-building-sewrio": {
       "date": "Jul 2026",
       "title": "Why I started building Sewrio",
-      "excerpt": "It started with a dress I couldn't buy and a custom sewing pattern that cost more than the dress itself — how a frustrating personal problem became an AI pattern-generation platform.",
+      "excerpt": "It started with a dress I couldn't buy and a custom sewing pattern that cost more than the dress itself. Here's how a frustrating personal problem became an AI pattern-generation platform.",
       "content": [
         "People often ask why I decided to build an AI-powered pattern generation platform. The truth is, I never planned to start a fashion technology company. It all began with a dress.",
-        "I'd found a beautiful dress from a brand overseas — exactly what I was looking for. The company didn't ship to Turkey, and nothing else came close. So I thought: what if I just sewed it myself?",
-        "I don't have professional pattern-making skills, so I asked someone to draft the sewing pattern from photos. The price shocked me — a single custom pattern cost more than the dress itself, enough to make me question whether sewing it was even worth it. It felt strange: AI can generate images, write code, compose music, even help discover new medicines, yet turning a garment photo into a usable sewing pattern was still an expensive, manual service.",
+        "I'd found a beautiful dress from a brand overseas, exactly what I was looking for. The company didn't ship to Turkey, and nothing else came close. So I thought: what if I just sewed it myself?",
+        "I don't have professional pattern-making skills, so I asked someone to draft the sewing pattern from photos. The price shocked me: a single custom pattern cost more than the dress itself, enough to make me question whether sewing it was even worth it. It felt strange. AI can generate images, write code, compose music, even help discover new medicines, yet turning a garment photo into a usable sewing pattern was still an expensive, manual service.",
         "With a background in molecular biology, genetics, and engineering, my instinct was simple: surely AI can solve this. I tested existing tools, image-processing pipelines, and computer vision models. Some could identify clothing. Some could segment garments. Some could estimate shapes. None could generate something you could actually cut from fabric and sew.",
-        "That's when I realized the real challenge wasn't recognizing clothes — it was understanding how garments are constructed. A sewing pattern isn't just an outline; it encodes proportions, construction logic, ease allowances, curves, seam relationships, and decades of grading knowledge. It wasn't an image-recognition problem. It was a translation problem: turning a 2D photo into a manufacturable digital pattern.",
-        "I started building tools just for myself, to remove the repetitive work. Then I realized thousands of makers, fashion students, independent designers, and small businesses hit the exact same wall — hours drafting by hand, high fees for custom work, or giving up on a design entirely. That's when the project stopped being a personal experiment and became Sewrio.",
-        "Sewrio is our attempt to make digital pattern creation accessible to everyone, combining computer vision, AI, and parametric pattern generation to remove one of the biggest barriers in garment creation. The goal isn't to replace pattern makers — it's to give creators a smarter starting point, so they spend less time on repetitive technical work and more time designing. The dress that couldn't be shipped to Turkey became the start of an entirely new journey. Sometimes the best products don't begin with a brilliant business idea — they begin with a frustrating personal problem. Sewrio started with mine."
+        "That's when I realized the real challenge wasn't recognizing clothes. It was understanding how garments are constructed. A sewing pattern isn't just an outline; it encodes proportions, construction logic, ease allowances, curves, seam relationships, and decades of grading knowledge. It wasn't an image-recognition problem. It was a translation problem: turning a 2D photo into a manufacturable digital pattern.",
+        "I started building tools just for myself, to remove the repetitive work. Then I realized thousands of makers, fashion students, independent designers, and small businesses hit the exact same wall: hours drafting by hand, high fees for custom work, or giving up on a design entirely. That's when the project stopped being a personal experiment and became Sewrio.",
+        "Sewrio is our attempt to make digital pattern creation accessible to everyone, combining computer vision, AI, and parametric pattern generation to remove one of the biggest barriers in garment creation. The goal isn't to replace pattern makers. It's to give creators a smarter starting point, so they spend less time on repetitive technical work and more time designing. The dress that couldn't be shipped to Turkey became the start of an entirely new journey. Sometimes the best products don't begin with a brilliant business idea; they begin with a frustrating personal problem. Sewrio started with mine."
       ]
     },
-    "seam-allowance-hardest-thing-to-automate": {
+    "how-to-read-a-sewing-pattern-beginners-guide": {
       "date": "Jun 2026",
-      "title": "Why seam allowance is the hardest thing to automate",
-      "excerpt": "The math is easy. Getting a machine to think like a pattern maker is not — here's what it actually took to teach an AI where a seam allowance belongs.",
+      "title": "How to Read a Sewing Pattern (Beginner's Guide)",
+      "excerpt": "Sewing pattern symbols, lines, and markings explained simply, so you can go from envelope to cutting table without guessing.",
       "content": [
-        "Seam allowance looks like a solved problem from the outside — add a fixed offset around every pattern piece and you're done. In practice, the right allowance depends on the fabric, the seam type, the machine that will sew it, and the finishing method, and it changes piece by piece across a single garment.",
-        "A curved princess seam on a woven bodice wants a narrower allowance than a straight side seam on heavy denim. A serged knit hem behaves nothing like a bound edge. None of that is written down anywhere a model can simply read it — it lives in the judgment of people who have cut thousands of garments.",
-        "Getting this right meant training Sewrio on real pattern sets annotated by working pattern makers, not just geometry rules. The result is an engine that treats seam allowance as a design decision tied to fabric and construction, not a constant."
+        "Every sewing pattern is covered in lines, symbols, and abbreviations that look confusing the first time you open one. Once you know what each mark means, though, a pattern stops being a puzzle and starts being a set of instructions you can follow with confidence.",
+        "Start with the outer cutting line, usually a solid line that shows exactly where your scissors should go. Just inside it, a dashed line marks the seam line, the point where your stitches will actually sit once the seam allowance is folded back.",
+        "Grainline arrows tell you how to place the pattern piece on your fabric so it hangs correctly once sewn; they should always run parallel to the selvedge. A 'fold' symbol, usually a bracket with arrows pointing to a line, means that piece is cut on a folded edge of fabric rather than as a single layer.",
+        "Notches, the small triangles or lines along the seam edge, exist purely to help you match pieces up correctly during construction. Circles and dots mark where darts start and end, where pockets attach, or where a zipper opening begins.",
+        "Sizing information, cutting layouts, and yardage requirements are usually printed separately on the pattern instruction sheet, along with a key explaining every symbol used. Reading through that key once before you start cutting saves far more time than guessing your way through a seam later."
       ]
     },
-    "grading-rules-from-vintage-tailoring-books": {
+    "how-to-print-pdf-sewing-patterns-at-home": {
       "date": "May 2026",
-      "title": "Grading rules we borrowed from vintage tailoring books",
-      "excerpt": "Some of the best sizing logic we use is over eighty years old — how a stack of vintage tailoring books ended up shaping our grading algorithm.",
+      "title": "How to Print PDF Sewing Patterns at Home",
+      "excerpt": "A step-by-step guide to printing, checking, and taping together a PDF sewing pattern on a standard home printer.",
       "content": [
-        "Modern grading software tends to treat sizing as pure interpolation — scale every point on the pattern by the same ratio and call it a size range. Tailors from the mid-20th century knew better: some measurements grow faster than others as a body scales, and grading in a straight line produces garments that fit worse the further you get from the sample size.",
-        "We went back to tailoring references from the 1930s–1950s to study how experienced pattern graders distributed ease non-uniformly across a size range — more growth through the bust and hip, less through the neckline and wrist.",
-        "Those rules, translated into Sewrio's grading engine, are why patterns generated at the edges of a size range still fit the way the sample size does, instead of just looking like a scaled photocopy of it."
+        "PDF sewing patterns are usually formatted to print across multiple standard sheets of paper, tiled like a puzzle you assemble at home. Getting a clean, accurate result takes a few extra steps beyond just hitting print.",
+        "The single most important setting is scale. In your PDF viewer's print dialog, choose '100%' or 'Actual size', never 'Fit to page' or 'Shrink to fit', since either of those will scale the pattern down and throw off every measurement.",
+        "Almost every PDF pattern includes a test square, usually a 1 inch or 5 centimeter box printed on the first page. Print that page first, then measure the square with a ruler before printing the rest. If it doesn't match exactly, adjust your printer's scale setting and test again.",
+        "Once printing is confirmed accurate, print the remaining pages and trim the margins along the guide lines printed on each sheet. Lay the pages out in order using the small page numbers or a layout diagram included in the file, then tape them together, edge to edge, before cutting out your pattern pieces.",
+        "If your home printer only handles letter or A4 paper, look for a 'copy shop' or 'projector' version of the file when one is available. Copy shop files print on large-format paper at a print shop with no assembly required, and projector files let you trace the pattern directly onto fabric using a projector, skipping printing altogether."
       ]
     },
-    "from-prompt-to-production-pattern-in-one-afternoon": {
+    "digital-vs-printed-sewing-patterns-which-is-better": {
       "date": "Apr 2026",
-      "title": "From prompt to production pattern in one afternoon",
-      "excerpt": "A behind-the-scenes look at how one independent designer went from a rough prompt to a production-ready pattern and shipped her first collection.",
+      "title": "Digital vs Printed Sewing Patterns: Which One Is Better?",
+      "excerpt": "Cost, storage, editing, and convenience compared, so you can decide whether a digital or printed sewing pattern fits the way you actually sew.",
       "content": [
-        "An independent designer came to us with sketches for a six-piece capsule collection and a production deadline three weeks out. Normally, turning sketches into graded, cutter-ready patterns for a full size range takes a pattern maker days per style.",
-        "Working directly in Sewrio, she described each silhouette in plain language, adjusted fit and ease interactively, and exported production-ready DXF files the same afternoon — with every piece graded across her full size range and seam allowances set per fabric.",
-        "The collection shipped on time. What used to be the bottleneck between a sketch and a cutting table became the fastest part of her process."
+        "Sewing patterns come in two basic formats today: printed patterns you buy as a physical envelope, and digital patterns you download and either print or trace yourself. Each has real advantages, and the better choice usually comes down to how you like to work rather than one format being objectively superior.",
+        "Printed patterns are ready to use the moment they arrive. There's no printing, taping, or scale-checking involved, and the tissue paper is often reusable across multiple projects if you're careful with it. The tradeoff is less flexibility: resizing a printed pattern means tracing or physically altering the tissue by hand.",
+        "Digital patterns cost less to produce and distribute, which is often reflected in a lower price, and they arrive instantly instead of waiting on shipping. Because the pattern exists as a file, resizing between included sizes takes seconds rather than an afternoon with tracing paper, and a layer-based PDF lets you print only the size you need.",
+        "The real cost of a digital pattern shows up at home: paper, ink, and the time spent taping sheets together, or a trip to a copy shop for a large-format print. For anyone who sews often, that one-time setup is a small price for a pattern library that never takes up shelf space.",
+        "If you sew occasionally and want something ready to cut into right away, a printed pattern is hard to beat. If you sew across a range of sizes, want to make quick fit adjustments, or would rather build a digital library than a drawer full of tissue, digital patterns are usually the better fit, especially as tools that generate them directly from a photo or sketch make the format even more convenient."
       ]
     }
   },

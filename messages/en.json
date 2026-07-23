@@ -141,6 +141,20 @@
     "description": "Notes from the Sewrio studio — behind-the-scenes stories on AI-powered pattern making, sewing techniques, and the future of fashion technology."
   },
   "BlogPosts": {
+    "why-i-started-building-sewrio": {
+      "date": "Jul 2026",
+      "title": "Why I started building Sewrio",
+      "excerpt": "It started with a dress I couldn't buy and a custom sewing pattern that cost more than the dress itself — how a frustrating personal problem became an AI pattern-generation platform.",
+      "content": [
+        "People often ask why I decided to build an AI-powered pattern generation platform. The truth is, I never planned to start a fashion technology company. It all began with a dress.",
+        "I'd found a beautiful dress from a brand overseas — exactly what I was looking for. The company didn't ship to Turkey, and nothing else came close. So I thought: what if I just sewed it myself?",
+        "I don't have professional pattern-making skills, so I asked someone to draft the sewing pattern from photos. The price shocked me — a single custom pattern cost more than the dress itself, enough to make me question whether sewing it was even worth it. It felt strange: AI can generate images, write code, compose music, even help discover new medicines, yet turning a garment photo into a usable sewing pattern was still an expensive, manual service.",
+        "With a background in molecular biology, genetics, and engineering, my instinct was simple: surely AI can solve this. I tested existing tools, image-processing pipelines, and computer vision models. Some could identify clothing. Some could segment garments. Some could estimate shapes. None could generate something you could actually cut from fabric and sew.",
+        "That's when I realized the real challenge wasn't recognizing clothes — it was understanding how garments are constructed. A sewing pattern isn't just an outline; it encodes proportions, construction logic, ease allowances, curves, seam relationships, and decades of grading knowledge. It wasn't an image-recognition problem. It was a translation problem: turning a 2D photo into a manufacturable digital pattern.",
+        "I started building tools just for myself, to remove the repetitive work. Then I realized thousands of makers, fashion students, independent designers, and small businesses hit the exact same wall — hours drafting by hand, high fees for custom work, or giving up on a design entirely. That's when the project stopped being a personal experiment and became Sewrio.",
+        "Sewrio is our attempt to make digital pattern creation accessible to everyone, combining computer vision, AI, and parametric pattern generation to remove one of the biggest barriers in garment creation. The goal isn't to replace pattern makers — it's to give creators a smarter starting point, so they spend less time on repetitive technical work and more time designing. The dress that couldn't be shipped to Turkey became the start of an entirely new journey. Sometimes the best products don't begin with a brilliant business idea — they begin with a frustrating personal problem. Sewrio started with mine."
+      ]
+    },
     "seam-allowance-hardest-thing-to-automate": {
       "date": "Jun 2026",
       "title": "Why seam allowance is the hardest thing to automate",

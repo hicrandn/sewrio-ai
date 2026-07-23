@@ -141,6 +141,20 @@
     "description": "Sewrio stüdyosundan notlar — yapay zeka destekli kalıp üretimi, dikiş ve moda teknolojisi üzerine perde arkası hikayeler."
   },
   "BlogPosts": {
+    "why-i-started-building-sewrio": {
+      "date": "Tem 2026",
+      "title": "Sewrio'yu kurmaya neden başladım",
+      "excerpt": "Her şey satın alamadığım bir elbiseyle ve elbisenin kendisinden daha pahalıya mal olan özel bir dikiş kalıbıyla başladı — sıradan bir kişisel sorunun nasıl bir yapay zeka kalıp üretim platformuna dönüştüğü.",
+      "content": [
+        "İnsanlar sık sık neden yapay zeka destekli bir kalıp üretim platformu kurmaya karar verdiğimi soruyor. Gerçek şu ki, bir moda teknolojisi şirketi kurmayı hiç planlamamıştım. Her şey bir elbiseyle başladı.",
+        "Yurt dışından bir markaya ait, tam aradığım gibi güzel bir elbise bulmuştum. Şirket Türkiye'ye gönderim yapmıyordu ve hiçbir alternatif ona yaklaşamadı bile. Kendi kendime, 'Bunu kendim dikersem olmaz mı?' diye düşündüm.",
+        "Profesyonel bir kalıpçılık becerim olmadığı için, fotoğraflardan kalıbı çıkarması için birine ulaştım. Fiyat beni şok etti — tek bir özel kalıp, elbisenin kendisinden bile daha pahalıya geliyordu; bu da elbiseyi dikmeye değip değmeyeceğini sorgulamama yetti. Garip geldi: yapay zeka görsel üretebiliyor, kod yazabiliyor, müzik besteleyebiliyor, hatta yeni ilaçların keşfine yardım edebiliyor; ama bir kıyafet fotoğrafından kullanılabilir bir dikiş kalıbı çıkarmak hâlâ pahalı, elle yapılan bir hizmetti.",
+        "Moleküler Biyoloji ve Genetik ile Mühendislik geçmişimle içgüdüm basitti: 'Yapay zeka bunu kesin çözebilir.' Var olan araçları, görüntü işleme çözümlerini ve farklı bilgisayarlı görü modellerini denedim. Bazıları kıyafeti tanıyabiliyordu. Bazıları parçalarına ayırabiliyordu. Bazıları şekli tahmin edebiliyordu. Ama hiçbiri kumaştan kesip dikebileceğin, gerçekten kullanılabilir bir kalıp üretemiyordu.",
+        "İşte o an anladım ki asıl zorluk kıyafeti tanımak değildi — kıyafetin nasıl kurgulandığını anlamaktı. Bir dikiş kalıbı sadece bir dış hat değildir; oranları, konstrüksiyon mantığını, pay değerlerini, kavisleri, dikiş ilişkilerini ve on yıllara dayanan kalıpçılık bilgisini barındırır. Bu bir görüntü tanıma problemi değildi. Bu bir çeviri problemiydi: iki boyutlu bir fotoğrafı, üretilebilir bir dijital kalıba dönüştürmek.",
+        "Önce sadece kendim için araçlar yapmaya başladım, tekrarlayan işi ortadan kaldırmak için. Sonra binlerce üreticinin, moda öğrencisinin, bağımsız tasarımcının ve küçük işletmenin aynı duvara çarptığını fark ettim — saatlerce elle kalıp çizmek, özel çalışma için yüksek ücretler ödemek ya da sevdikleri bir tasarımdan tamamen vazgeçmek. İşte o zaman proje kişisel bir denemeden çıkıp Sewrio'ya dönüştü.",
+        "Sewrio, dijital kalıp oluşturmayı herkes için erişilebilir kılma çabamız; bilgisayarlı görü, yapay zeka ve parametrik kalıp üretimini bir araya getirerek kıyafet üretiminin önündeki en büyük engellerden birini kaldırıyoruz. Amacımız kalıpçıların yerini almak değil — üreticilere daha akıllı bir başlangıç noktası sunarak, tekrarlayan teknik işlere daha az, tasarıma daha çok zaman ayırmalarını sağlamak. Türkiye'ye gönderilemeyen o elbise, tamamen yeni bir yolculuğun başlangıcı oldu. Bazen en iyi projeler parlak bir iş fikriyle değil, sinir bozucu kişisel bir sorunla başlar. Sewrio, benimkiyle başladı."
+      ]
+    },
     "seam-allowance-hardest-thing-to-automate": {
       "date": "Haz 2026",
       "title": "Dikiş payı neden otomatikleştirmesi en zor şey",
